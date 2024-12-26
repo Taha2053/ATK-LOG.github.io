@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍊 ATK'Log</title>
+    <link rel="stylesheet" href="../Styles/article.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
+    <link rel="stylesheet" href="../Styles/phonescreencss.css">
+    <script src="https://kit.fontawesome.com/d72947389b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>🍊 ATK'Log</h1>
+                <ul id="sidemenu">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../posts.html">Posts</a></li>
+                    <!-- <li><a href="#chatbot">ChatBot</a></li> -->
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="container">
+                <h2 class="articletitle">Your Article Title Here</h2>
+                <h4 class="author">Author name</h4>
+                <div class="articlecontent">
+                    <p>Welcome to your new article template! This section is where your main content goes. You can write about your projects, share knowledge, or explore new topics in data science and AI.</p>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------Contact-------->
+    <div id="contact">
+        <div class="copyright">
+            <p>
+                Copyright © 2024 All About Me All rights reserved 
+            </p>
+        </div>
+    </div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tablinks")
+    var tabcontents = document.getElementsByClassName("tabcontents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+
+<!-------Js for the side menu of the phone---->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTZvOT6A32VRj6eZ5ozr22och8IryIvtJ-O-MjWZKILD4YkKCyS0-MuMiyR6fAizbI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.rest()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
