@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020C1B; 
+    color: #e1e1e1; 
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/background.png);
+    background-position: center;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E3463A; 
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.15s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#posts {
+    padding: 50px 5%;
+    background-color: rgba(18, 18, 18, 0.8); 
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#posts h1 {
+    text-align: center;
+    font-size: 36px;
+    color: white; 
+    margin-bottom: 30px;
+}
+
+.postslist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+
+.post {
+    background-color: #031127; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.post:hover {
+    background-color: #051835; 
+    transform: translateY(-5px);
+}
+
+.post h2 {
+    font-size: 24px;
+    color: #E3463A;
+    margin-bottom: 15px;
+}
+
+.post .description {
+    font-size: 14px;
+    color: #d1d1d1; 
+    margin-bottom: 20px;
+}
+
+.post .tags {
+    margin-bottom: 20px;
+}
+
+.post .tags a {
+    text-decoration: none;
+    color: #E3463A; 
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 3px 10px;
+    background-color: #062047; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post .tags a:hover {
+    background-color: #E3463A; 
+    color: white;
+}
+
+.post a {
+    text-decoration: none;
+    color: #E3463A; 
+    font-size: 14px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: #E3463A; 
+}

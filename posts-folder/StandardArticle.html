@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍊 ATK'Log</title>
+    <link rel="stylesheet" href="../../Styles/article.css">
+    <link rel="stylesheet" href="../../Styles/phonescreencss.css">
+    <link rel="stylesheet" href="Styling.css">
+    <script src="https://kit.fontawesome.com/d72947389b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>🍊 ATK'Log</h1>
+                <ul id="sidemenu">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../posts.html">Posts</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="container">
+                <div class="articlecontent">
+                    <p class="date"><strong>Publishing Date:</strong> 01/01/2025</p>
+                    <p class="author"><strong>Author:</strong> Khalfallah Almouthana Taha</p>
+                    
+                    <h1 class="articletitle">Understanding Prompt Engineering</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="copyright">
+            <p>
+                Copyright © Almouthana Taha Khalfallah. 2024 All rights reserved
+            </p>
+        </div>
+    </div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tablinks")
+    var tabcontents = document.getElementsByClassName("tabcontents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTZvOT6A32VRj6eZ5ozr22och8IryIvtJ-O-MjWZKILD4YkKCyS0-MuMiyR6fAizbI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.rest()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>

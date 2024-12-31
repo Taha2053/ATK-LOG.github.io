@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍊 ATK'Log</title>
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/phonescreencss.css">
+    <link rel="stylesheet" href="Styles/postcontainer.css">
+
+    <script src="https://kit.fontawesome.com/d72947389b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>🍊 ATK'Log <a href="#header"></a></h1>
+                <ul id="sidemenu">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#posts">Posts</a></li>
+                    <!-- <li><a href="index.html#chatbot">ChatBot</a></li> -->
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Posts Section -->
+    <section id="posts">
+        <div class="container">
+            <h1>Blog Posts</h1>
+            
+            <div class="postslist">
+                <div class="post">
+                    <h2>Understanding Prompt Engineering</h2>
+                    <p class="description">The article explains the fundamentals of prompt engineering, focusing on techniques for crafting effective prompts to guide AI models towards desired outputs.</p>
+                    <div class="tags">
+                        <a href="#">AI</a>
+                        <a href="#">Technology</a>
+                    </div>
+                    <a href="posts-folder/PromptEngineering/PromptEngArticle.html">Read More</a>
+                </div>
+                <!-- 
+                <div class="post">
+                    <h2>Exploring Quantum Computing</h2>
+                    <p class="description">Quantum computing is transforming the tech industry. This article covers the basics of quantum computing and its potential applications.</p>
+                    <div class="tags">
+                        <a href="#">Quantum Computing</a>
+                        <a href="#">Physics</a>
+                    </div>
+                    <a href="posts-folder/StandardArticle.html">Read More</a>
+                </div>
+                
+                <div class="post">
+                    <h2>The Future of Data Science</h2>
+                    <p class="description">Data science continues to evolve with new tools and techniques. This post explores emerging trends and the future of data science in various industries.</p>
+                    <div class="tags">
+                        <a href="#">Data Science</a>
+                        <a href="#">Big Data</a>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="post">
+                    <h2>Understanding AI and Machine Learning</h2>
+                    <p class="description">In this post, we dive deep into the concepts of AI and machine learning, discussing the key differences, applications, and future possibilities.</p>
+                    <div class="tags">
+                        <a href="#">AI</a>
+                        <a href="#">Machine Learning</a>
+                        <a href="#">Technology</a>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="post">
+                    <h2>Understanding AI and Machine Learning</h2>
+                    <p class="description">In this post, we dive deep into the concepts of AI and machine learning, discussing the key differences, applications, and future possibilities.</p>
+                    <div class="tags">
+                        <a href="#">AI</a>
+                        <a href="#">Machine Learning</a>
+                        <a href="#">Technology</a>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+                 -->
+            </div>
+        </div>
+    </section>
+
+    <div id="contact">
+        <div class="copyright">
+            <p>
+                Copyright © Almouthana Taha Khalfallah. 2024 All rights reserved
+            </p>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzTZvOT6A32VRj6eZ5ozr22och8IryIvtJ-O-MjWZKILD4YkKCyS0-MuMiyR6fAizbI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
