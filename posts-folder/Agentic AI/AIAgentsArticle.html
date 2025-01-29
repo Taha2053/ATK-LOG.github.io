@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATK'Log</title>
+    <link rel="icon" href="../../Images/emoji_image.png" type="image/png">
+    <link rel="stylesheet" href="../../Styles/article.css">
+    <link rel="stylesheet" href="../../Styles/phonescreencss.css">
+    <link rel="stylesheet" href="../../Styles/ArticleStyling.css">
+    <script src="https://kit.fontawesome.com/d72947389b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="../../index.html" style="text-decoration: none; color: inherit;"><h1>🍊 ATK'Log </h1></a>
+                <ul id="sidemenu">
+                    <li><a href="../../index.html#about">About</a></li>
+                    <li><a href="../../index.html#projects">Projects</a></li>
+                    <li><a href="../../index.html#services">Services</a></li>
+                    <li><a href="../../posts.html">Posts</a></li>
+                    <li><a href="../../index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="container">
+                <div class="articlecontent">
+                    <p class="date"><strong>Publishing Date:</strong> 29/01/2025</p>
+                    <p class="author"><strong>Author:</strong> Khalfallah Almouthana Taha</p>
+                    
+                    <h1 class="articletitle">What are AI agents?</h1>
+                    <p>An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.</p>
+                    
+                    <p>These agents can be implemented in various applications in order to solve and work on complex tasks in different fields from software design and IT automation to code generation, problem solving, conversational assistants, decision making, interacting with external environments and executing actions. They use advanced NLP (natural language processing) techniques of large language models (LLMs) to comprehend and respond to user inputs step-by-step and determine when to call on external tools.</p>
+                    
+                    <p>But what makes them any different from other chatbots?</p>
+                    
+                    <h2>Agentic vs Non-Agentic Chatbots</h2>
+                    <p>Non-agentic AI chatbots are ones without available tools, memory and reasoning. They can only reach short-term goals and cannot plan ahead. As we know them, non-agentic chatbots require continuous user input to respond. They can produce responses to common prompts that most likely align with user expectations but perform poorly on questions unique to the user and their data. Since these chatbots do not hold memory, they cannot learn from their mistakes if their responses are unsatisfactory.</p>
+
+                    <p>In contrast, agentic AI chatbots learn to adapt to user expectations over time, providing a more personalized experience and comprehensive responses. They can complete complex tasks by creating subtasks without human intervention and considering different plans. These plans can also be self-corrected and updated as needed. Agentic AI chatbots, unlike non-agentic ones, assess their tools and use their available resources to fill in information gaps.</p>
+
+                    <h2>Key components of AI agent architecture</h2>
+                    <p>Agents in artificial intelligence may operate in different environments to accomplish unique purposes. However, all functional agents share these components.</p>
+
+                    <h3>Architecture</h3>
+                    <p>Architecture is the base the agent operates from. The architecture can be a physical structure, a software program, or a combination. For example, a robotic AI agent consists of actuators, sensors, motors, and robotic arms. Meanwhile, an architecture that hosts an AI software agent may use a text prompt, API, and databases to enable autonomous operations.</p>
+
+                    <h3>Agent function</h3>
+                    <p>The agent function describes how the data collected is translated into actions that support the agent's objective. When designing the agent function, developers consider the type of information, AI capabilities, knowledge base, feedback mechanism, and other technologies required.</p>
+
+                    <h3>Agent program</h3>
+                    <p>An agent program is the implementation of the agent function. It involves developing, training, and deploying the AI agent on the designated architecture. The agent program aligns the agent's business logic, technical requirements, and performance elements.</p>
+
+                    <h2>How AI agents work</h2>
+                    <p>At the core AI agents are LLMs, that's why they are often called LLM agents. But the difference is that traditional LLMs rely on the data that was used to train them to generate their responses, hence they are bounded by knowledge and reasoning limitations. In contrast, agentic AI and technology in general uses tool calling on the backend to obtain up-to-date information, optimize workflow and create subtasks autonomously to achieve complex goals. In this process, the autonomous agent learns to adapt to user expectations over time. The agent's ability to store past interactions in memory and plan future actions encourages a personalized experience and comprehensive responses.</p>
+
+                    <h3>Goal initialization and planning</h3>
+                    <p>Although AI agents are autonomous in their decision-making processes, they require a set goal and environment defined by humans. There are three main influences on autonomous agent behavior:</p>
+                    <ul>
+                        <li>The team of developers that design and train the agentic AI system.</li>
+                        <li>The team that deploys the agent and provides the user with access to it.</li>
+                        <li>The user that provides the AI agent with specific goals to accomplish and establishes available tools to use.</li>
+                    </ul>
+
+                    <p>Given the user's goals and the agent's available tools, the AI agents then performs task decomposition to improve performance. Essentially, the agent creates a plan of specific tasks and subtasks to accomplish the complex task, but on the other hand, for simple tasks, planning is not crucial. Instead, an agent can iteratively reflect on its responses and improve them without planning its next steps.</p>
+
+                    <h3>Reasoning using available tools</h3>
+                    <p>Generally, AI agents don't have the full knowledge on the complex task they are going to tackle neither its subtasks. So in order to surpass this limitation, these agents use their available tools: external data sets, web searches, APIs and even other agents (Hierarchical agents). After the missing information is retrieved from these tools, the agent can update its knowledge base. This means that each step of the way, the agent reassesses its plan of action and self-corrects.</p>
+
+                    <h3>Learning and Reflection - Implement Tasks</h3>
+                    <p>AI agents use feedback mechanisms, such as other AI agents and human-in-the-loop (HITL), to improve the accuracy of their responses. After the agent forms its response to the user, the agent stores the learned information along with the user's feedback to improve performance and adjust to user preferences for future goals.</p>
+                    <img src="LLMRecIllustration.png" alt="aws.amazon.com">
+                    <p>If other agents were used to reach the goal, their feedback may also be used. Multi-agent feedback can be especially useful in minimizing the time that human users spend providing direction. However, users can also provide feedback throughout the agent's actions and internal reasoning to better align the results with the intended goal.</p>
+
+                    <p>Feedback mechanisms improve the AI agent's reasoning and accuracy, which is commonly referred to as iterative refinement. To avoid repeating the same mistakes, AI agents can also store data about solutions to previous obstacles in a knowledge base.</p>
+
+                    <h2>Reasoning paradigms</h2>
+
+                    <h3>ReAct (Reasoning and Action)</h3>
+                    <p>With this paradigm, we can instruct agents to "think" and plan after each action taken and with each tool response to decide which tool to use next. These Think-Act-Observe loops are used to solve problems step by step and iteratively improve upon responses. Through the prompt structure, agents continuously update their context with new reasoning. This can be interpreted as a form of Chain-of-Thought prompting.</p>
+
+                    <h3>ReWOO (Reasoning WithOut Observation)</h3>
+                    <p>The ReWOO method, unlike ReAct, eliminates the dependence on tool outputs for action planning. Instead, agents plan upfront. Redundant tool usage is avoided by anticipating which tools to use upon receiving the initial prompt from the user. This is desirable from a human-centered perspective since the user can confirm the plan before it is executed.</p>
+
+                    <p>The ReWOO workflow is made up of three modules. In the planning module, the agent anticipates its next steps given a user's prompt. The next stage entails collecting the outputs produced by calling these tools. Lastly, the agent pairs the initial plan with the tool outputs to formulate a response. This planning ahead can greatly reduce token usage and computational complexity as well as the repercussions of intermediate tool failure.</p>
+
+                    <h2>Types of AI agents</h2>
+                    <p>AI agents can be developed to have varying levels of capabilities. There exists simple AI agents designed for solving and working on simple tasks, while there are high level complex AI agents that are responsible of solving complex tasks. Below the types of AI agents are cited from the simplest to the most complex:</p>
+
+                    <h3>1. Simple Reflex Agents</h3>
+                    <p>A simple reflex agent operates strictly based on predefined rules and its immediate data. This agent does not hold any memory, nor does it interact with other agents if it is missing information. It will not respond to situations beyond a given event condition action rule. Hence, these agents are suitable for simple tasks that don't require extensive training.</p>
+
+                    <h3>2. Model based reflex AI agents</h3>
+                    <p>Model-based reflex agents use both their current perception and memory to maintain an internal model of the world. As the agent continues to receive new information, the model is updated. The agent's actions depend on its model, reflexes, previous precepts and current state.</p>
+                    
+                    <p>These agents, unlike simple reflex agents, can store information in memory and can operate in environments that are partially observable and changing. However, they are still limited by their set of rules.</p>
+
+                    <h3>3. Goal based agents</h3>
+                    <p>Goal-based agents, or rule-based agents, are AI agents with more robust reasoning capabilities. Besides evaluating the environment data, the agent compares different approaches to help it achieve the desired outcome. Goal-based agents always choose the most efficient path. They are suitable for performing complex tasks, such as natural language processing (NLP) and robotics applications.</p>
+
+                    <h3>4. Utility based Agents</h3>
+                    <p>A utility-based agent uses a complex reasoning algorithm to help users maximize the outcome they desire. The agent compares different scenarios and their respective utility values or benefits. Then, it chooses one that provides users with the most rewards. Utility is calculated using a utility function. This function assigns a utility value, a metric measuring the usefulness of an action or how "happy" it will make the agent, to each scenario based on a set of fixed criteria. The criteria can include factors such as progression toward the goal, time requirements, or computational complexity.</p>
+
+                    <h3>5. Learning Agents</h3>
+                    <p>Learning agents hold the same capabilities as the other agent types but are unique in their ability to learn. New experiences are added to their initial knowledge base, which occurs autonomously. This learning enhances the agent's ability to operate in unfamiliar environments. Learning agents may be utility or goal-based in their reasoning and are comprised of four main elements:</p>
+                    <ul>
+                        <li><strong>Learning:</strong> This improves the agent's knowledge by learning from the environment through its precepts and sensors.</li>
+                        <li><strong>Critic:</strong> This provides feedback to the agent on whether the quality of its responses meets the performance standard.</li>
+                        <li><strong>Performance:</strong> This element is responsible for selecting actions upon learning.</li>
+                        <li><strong>Problem generator:</strong> This creates various proposals for actions to be taken.</li>
+                    </ul>
+
+                    <h3>6. Hierarchical agents</h3>
+                    <p>Hierarchical agents are an organized group of intelligent agents arranged in tiers. The higher-level agents deconstruct complex tasks into smaller ones and assign them to lower-level agents. Each agent runs independently and submits a progress report to its supervising agent. The higher-level agent collects the results and coordinates subordinate agents to ensure they collectively achieve goals.</p>
+
+                    <h2>Benefits of AI agents</h2>
+
+                    <h3>Improved productivity</h3>
+                    <p>AI agents are autonomous intelligent systems performing specific tasks without human intervention. Organizations use AI agents to achieve specific goals and more efficient business outcomes. Business teams are more productive when they delegate repetitive tasks to AI agents. This way, they can divert their attention to mission-critical or creative activities, adding more value to their organization.</p>
+
+                    <h3>Reduced costs</h3>
+                    <p>Businesses can use intelligent agents to reduce unnecessary costs arising from process inefficiencies, human errors, and manual processes. You can confidently perform complex tasks because autonomous agents follow a consistent model that adapts to changing environments.</p>
+
+                    <h3>Informed decision-making</h3>
+                    <p>Advanced intelligent agents use machine learning (ML) to gather and process massive amounts of real-time data. This allows business managers to make better predictions at pace when strategizing their next move. For example, you can use AI agents to analyze product demands in different market segments when running an ad campaign.</p>
+
+                    <h3>Improved customer experience</h3>
+                    <p>Customers seek engaging and personalized experiences when interacting with businesses. Integrating AI agents allows businesses to personalize product recommendations, provide prompt responses, and innovate to improve customer engagement, conversion, and loyalty.</p>
+
+                    <h2>The challenges of using AI agents</h2>
+
+                    <h3>Multi-agent dependencies</h3>
+                    <p>Certain complex tasks require the knowledge of multiple AI agents. When implementing these multi-agent frameworks, there is a risk of malfunction. Multi-agent systems built on the same foundation models may experience shared pitfalls. Such weaknesses could cause a system-wide failure of all involved agents or expose vulnerability to adverse attacks. This highlights the importance of data governance in building foundation models and thorough training and testing processes.</p>
+
+                    <h3>Infinite feedback loops</h3>
+                    <p>The convenience of the hands-off reasoning for human users using AI agents also comes with its risks. Agents that are unable to create a comprehensive plan or reflect on their findings, may find themselves repeatedly calling the same tools, invoking infinite feedback loops. To avoid these redundancies, some level of real-time human monitoring may be used.</p>
+
+                    <h3>Computational complexity</h3>
+                    <p>Building AI agents from scratch is both time-consuming and can also be very computationally expensive. The resources required for training a high-performance agent can be extensive. Additionally, depending on the complexity of the task, agents can take several days to complete tasks.</p>
+
+                    <h2>A good Practice:</h2>
+                    <h3>Human supervision</h3>
+                    <p>To assist in the learning process for AI agents, especially in their early stages in a new environment, it can be helpful to provide occasional human feedback. This allows the AI agent to compare its performance to the expected standard and adjust accordingly. This form of feedback is helpful in improving the agent's adaptability to user preferences.</p>
+
+                    <p>Apart from this, it is best practice to require human approval before an AI agent takes highly impactful actions. For instance, actions ranging from sending mass emails to financial trading should require human confirmation. Some level of human monitoring is recommended for such high-risk domains.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="copyright">
+            <p>
+                Copyright © Almouthana Taha Khalfallah. 2025 All rights reserved
+            </p>
+        </div>
+    </div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tablinks")
+    var tabcontents = document.getElementsByClassName("tabcontents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTZvOT6A32VRj6eZ5ozr22och8IryIvtJ-O-MjWZKILD4YkKCyS0-MuMiyR6fAizbI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.rest()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
