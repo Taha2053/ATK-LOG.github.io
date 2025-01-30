@@ -1,5 +1,5 @@
 # Personal Portfolio
-Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as a [Your Profession/Field].
+Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as an AI engineering student .
 ## Features
 - Fully responsive design
 - Dark theme with red and black aesthetics
