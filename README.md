@@ -1,5 +1,9 @@
 # Personal Portfolio
+<<<<<<< HEAD
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as an applied Math. Engineering Student - AI enthusiast.
+=======
+Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as an AI engineering student .
+>>>>>>> e36262d472fb15ab1cb725e7e02b2ef2b2526eca
 ## Features
 - Fully responsive design
 - Dark theme with red and black aesthetics
