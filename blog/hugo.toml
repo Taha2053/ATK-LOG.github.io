@@ -13,3 +13,6 @@ theme = "PaperMod"
   url = "/"
   weight = 1
 
+disableHugoGeneratorInject = true
+
+
