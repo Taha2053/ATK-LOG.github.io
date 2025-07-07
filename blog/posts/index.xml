@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on ATK&#39;Log</title>
-    <link>/blog/posts/</link>
+    <link>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/</link>
     <description>Recent content in Posts on ATK&#39;Log</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>/blog/posts/testingpost/</link>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/testingpost/</link>
       <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>/blog/posts/testingpost/</guid>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/testingpost/</guid>
       <description>&lt;p&gt;This is my first blog post using Hugo!&lt;/p&gt;
 &lt;p&gt;I’m Taha, an aspiring AI engineer building cool things this summer ☀️&lt;/p&gt;</description>
     </item>
