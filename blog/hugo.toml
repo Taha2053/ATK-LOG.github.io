@@ -1,11 +1,19 @@
 baseURL = "https://taha2053.github.io/ATK-LOG.github.io/blog/"
+
 languageCode = "en-us"
 title = "ATK'Log"
 theme = "PaperMod"
 
+disableHugoGeneratorInject = true
+
+[params.assets]
+disableFingerprinting = true
+
+
 [params]
   author = "Almouthana Taha Khalfallah"
   showReadingTime = true
+  disableHugoGeneratorInject = true
 
 [menu]
 [[menu.main]]
@@ -13,6 +21,6 @@ theme = "PaperMod"
   url = "/"
   weight = 1
 
-disableHugoGeneratorInject = true
+
 
 
