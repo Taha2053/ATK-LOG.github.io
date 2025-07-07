@@ -1,4 +1,4 @@
-baseURL = "/blog/"
+baseURL = "/ATK-LOG.github.io/blog/"
 languageCode = "en-us"
 title = "ATK'Log"
 theme = "PaperMod"
