@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ATK&#39;Log</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on ATK&#39;Log</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>//localhost:1313/posts/testingpost/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/testingpost/</guid>
+      <description>&lt;p&gt;This is my first blog post using Hugo!&lt;/p&gt;
+&lt;p&gt;I’m Taha, an aspiring AI engineer building cool things this summer ☀️&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

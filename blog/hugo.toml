@@ -1,0 +1,15 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "ATK'Log"
+theme = "PaperMod"
+
+[params]
+  author = "Almouthana Taha Khalfallah"
+  showReadingTime = true
+
+[menu]
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
