@@ -6,15 +6,6 @@
     <description>Recent content in Posts on 🍊 ATK&#39;Log</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2025 02:25:33 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/ATK-LOG.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Prompt Engineering</title>
-      <link>http://localhost:1313/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/</link>
-      <pubDate>Wed, 01 Jan 2025 02:25:33 +0100</pubDate>
-      <guid>http://localhost:1313/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/</guid>
-      <description>&lt;h1 id=&#34;understanding-prompt-engineering&#34;&gt;Understanding Prompt Engineering&lt;/h1&gt;
-&lt;p&gt;Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses. By carefully crafting prompts, you provide the model with context, instructions, and examples that help it understand your intent and respond in a meaningful way. Think of it as providing a roadmap for the AI, steering it towards the specific output you have in mind.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
