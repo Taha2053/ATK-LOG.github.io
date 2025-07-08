@@ -1,7 +1,7 @@
 baseURL = "https://taha2053.github.io/ATK-LOG.github.io/blog/"
 
 languageCode = "en-us"
-title = "ATK'Log"
+title = "🍊 ATK'Log"
 theme = "PaperMod"
 
 disableHugoGeneratorInject = true
@@ -15,11 +15,24 @@ disableFingerprinting = true
   showReadingTime = true
   disableHugoGeneratorInject = true
 
+
+
 [menu]
-[[menu.main]]
+  [[menu.main]]
   name = "Home"
-  url = "/"
+  url = "https://taha2053.github.io/ATK-LOG.github.io/"
   weight = 1
+
+  [[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
 
 
 

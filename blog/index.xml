@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ATK&#39;Log</title>
+    <title>🍊 ATK&#39;Log</title>
     <link>https://taha2053.github.io/ATK-LOG.github.io/blog/</link>
-    <description>Recent content on ATK&#39;Log</description>
+    <description>Recent content on 🍊 ATK&#39;Log</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 02:25:33 +0100</lastBuildDate>
     <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/testingpost/</link>
-      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/testingpost/</guid>
-      <description>&lt;p&gt;This is my first blog post using Hugo!&lt;/p&gt;
-&lt;p&gt;I’m Taha, an aspiring AI engineer building cool things this summer ☀️&lt;/p&gt;</description>
+      <title>Prompt Engineering</title>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/</link>
+      <pubDate>Wed, 01 Jan 2025 02:25:33 +0100</pubDate>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/</guid>
+      <description>&lt;h1 id=&#34;understanding-prompt-engineering&#34;&gt;Understanding Prompt Engineering&lt;/h1&gt;
+&lt;p&gt;Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses. By carefully crafting prompts, you provide the model with context, instructions, and examples that help it understand your intent and respond in a meaningful way. Think of it as providing a roadmap for the AI, steering it towards the specific output you have in mind.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
