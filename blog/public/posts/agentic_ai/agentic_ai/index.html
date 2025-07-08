@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/ATK-LOG.github.io/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ATK-LOG.github.io/blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" type="image/png" href="/ATK-LOG.github.io/blog/emoji_image.png" />
+<title>Agentic AI | 🍊 ATK&#39;Log</title>
+<meta name="keywords" content="Agentic AI, AI Agents">
+<meta name="description" content="What are AI agents ?
+An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.
+These agents can be implemented in various applications in order to solve and work on complex tasks in different fields from software design and IT automation to code generation, problem solving , conversational assistants, descision making , interacting with external environments and executing actions. They use advanced NLP  ( natural language processing ) techniques of large language models (LLMs) to comprehend and respond to user inputs step-by-step and determine when to call on external tools.">
+<meta name="author" content="Almouthana Taha Khalfallah">
+<link rel="canonical" href="http://localhost:1313/ATK-LOG.github.io/blog/posts/agentic_ai/agentic_ai/">
+<link crossorigin="anonymous" href="/ATK-LOG.github.io/blog/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/ATK-LOG.github.io/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/ATK-LOG.github.io/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/ATK-LOG.github.io/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/ATK-LOG.github.io/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/ATK-LOG.github.io/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/ATK-LOG.github.io/blog/posts/agentic_ai/agentic_ai/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://taha2053.github.io/ATK-LOG.github.io/" accesskey="h" title="🍊 ATK&#39;Log (Alt + H)">🍊 ATK&#39;Log</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://taha2053.github.io/ATK-LOG.github.io/" title="Home">
+                    <span>Home</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/ATK-LOG.github.io/blog/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/ATK-LOG.github.io/blog/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <script src="https://kit.fontawesome.com/d72947389b.js" crossorigin="anonymous"></script>
+
+    
+    <h1 class="post-title entry-hint-parent">
+      Agentic AI
+    </h1>
+    <div class="post-meta"><span title='2025-01-29 18:29:35 +0100 WAT'>January 29, 2025</span>&nbsp;·&nbsp;11 min&nbsp;·&nbsp;Almouthana Taha Khalfallah
+
+</div>
+  
+    
+  </header> 
+  <div class="post-content"><h2 id="what-are-ai-agents-">What are AI agents ?<a hidden class="anchor" aria-hidden="true" href="#what-are-ai-agents-">#</a></h2>
+<p>An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.</p>
+<p>These agents can be implemented in various applications in order to solve and work on complex tasks in different fields from software design and IT automation to code generation, problem solving , conversational assistants, descision making , interacting with external environments and executing actions. They use advanced NLP  ( natural language processing ) techniques of large language models (LLMs) to comprehend and respond to user inputs step-by-step and determine when to call on external tools.</p>
+<p>But what makes them any different from other chatbots?</p>
+<h2 id="agentic-vs-non-agentic-chatbots">Agentic vs Non-Agentic Chatbots<a hidden class="anchor" aria-hidden="true" href="#agentic-vs-non-agentic-chatbots">#</a></h2>
+<p>Non-agentic AI chatbots are ones without available tools, memory and reasoning. They can only reach short-term goals and cannot plan ahead. As we know them, non-agentic chatbots require continuous user input to respond. They can produce responses to common prompts that most likely align with user expectations but perform poorly on questions unique to the user and their data. Since these chatbots do not hold memory, they cannot learn from their mistakes if their responses are unsatisfactory.</p>
+<p>In contrast, agentic AI chatbots learn to adapt to user expectations over time, providing a more personalized experience and comprehensive responses. They can complete complex tasks by creating subtasks without human intervention and considering different plans. These plans can also be self-corrected and updated as needed. Agentic AI chatbots, unlike non-agentic ones, assess their tools and use their available resources to fill in information gaps.</p>
+<p>So, how to build these AI Agents?</p>
+<h2 id="what-are-the-key-components-of-ai-agent-architecture"><strong>What are the key components of AI agent architecture?</strong><a hidden class="anchor" aria-hidden="true" href="#what-are-the-key-components-of-ai-agent-architecture">#</a></h2>
+<p>Agents in artificial intelligence may operate in different environments to accomplish unique purposes. However, all functional agents share these components.</p>
+<h3 id="architecture"><strong>Architecture</strong><a hidden class="anchor" aria-hidden="true" href="#architecture">#</a></h3>
+<p>Architecture is the base the agent operates from. The architecture can be a physical structure, a software program, or a combination. For example, a robotic AI agent consists of actuators, sensors, motors, and robotic arms. Meanwhile, an architecture that hosts an AI software agent may use a text prompt, API, and databases to enable autonomous operations.</p>
+<h3 id="agent-function"><strong>Agent function</strong><a hidden class="anchor" aria-hidden="true" href="#agent-function">#</a></h3>
+<p>The agent function describes how the data collected is translated into actions that support the agent’s objective. When designing the agent function, developers consider the type of information, AI capabilities, knowledge base, feedback mechanism, and other technologies required.</p>
+<h3 id="agent-program"><strong>Agent program</strong><a hidden class="anchor" aria-hidden="true" href="#agent-program">#</a></h3>
+<p>An agent program is the implementation of the agent function. It involves developing, training, and deploying the AI agent on the designated architecture. The agent program aligns the agent’s business logic, technical requirements, and performance elements.</p>
+<p>So, how do these agents work ?</p>
+<h2 id="how-ai-agents-work">How AI agents work<a hidden class="anchor" aria-hidden="true" href="#how-ai-agents-work">#</a></h2>
+<p>At the core AI agents are LLMs , that’s why they are ofently called LLM agents. But the difference is that traditional LLMs rely on the data that was used to train them to generate their responses, hence they are bounded by knowledge and resonning limitations. In contrast, agentic AI and technology in general uses tool calling on the backend to obtain up-to-date information, optimize workflow and create subtasks autonomously to achieve complex goals. In this process, the autonomous agent learns to adapt to user expectations over time. The agent&rsquo;s ability to store past interactions in memory and plan future actions encourages a personalized experience and comprehensive responses.</p>
+<h3 id="goal-initialisation-and-planning"><strong>Goal initialisation and planning</strong><a hidden class="anchor" aria-hidden="true" href="#goal-initialisation-and-planning">#</a></h3>
+<p>Although AI agents are autonomous in their decision-making processes , they require a set goal and environement defined by humans. There are three main influences on autonomous agent behavior:</p>
+<ul>
+<li>The team of developers that design and train the agentic AI system.</li>
+<li>The team that deploys the agent and provides the user with access to it.</li>
+<li>The user that provides the AI agent with specific goals to accomplish and establishes available tools to use.</li>
+</ul>
+<p>Given the user’s goals and the agent’s available tools, the AI agents then performs task decomposition to improve performance. Essentially, the agent creates a plan of specific tasks and subtasks to acomplish the complex task, but on the other hand, for simple task, planning is not crucial. Instead, an agent can iteratively reflect on its responses and improve them without planning its next steps.</p>
+<h3 id="resonnning-using-available-tools"><strong>Resonnning using available tools</strong><a hidden class="anchor" aria-hidden="true" href="#resonnning-using-available-tools">#</a></h3>
+<p>Generally, AI agents don’t have the full knowledge on the complex task they are going to tackle neither its subtasks. So in order to surpass this limitation, these agents use their available tools: external data sets, web searches, APIs and even other agents ( Hierarchical agents <strong>).</strong> After the missing information is retrieved from these tools, the agent can update its knowledge base. This means that each step of the way, the agent reassesses its plan of action and self-corrects.</p>
+<h3 id="learning-and-reflection---implement-tasks"><strong>Learning and Reflection - Implement Tasks</strong><a hidden class="anchor" aria-hidden="true" href="#learning-and-reflection---implement-tasks">#</a></h3>
+<p>AI agents use feedback mechanisms, such as other AI agents and human-in-the-loop (HITL), to improve the accuracy of their responses. After the agent forms its response to the user, the agent stores the learned information along with the user’s feedback to improve performance and adjust to user preferences for future goals.</p>
+<p>If other agents were used to reach the goal, their feedback may also be used. Multi-agent feedback can be especially useful in minimizing the time that human users spend providing direction. However, users can also provide feedback throughout the agent&rsquo;s actions and internal reasoning to better align the results with the intended goal.</p>
+<p>Feedback mechanisms improve the AI agent&rsquo;s reasoning and accuracy, which is commonly referred to as iterative refinement. To avoid repeating the same mistakes, AI agents can also store data about solutions to previous obstacles in a knowledge base.</p>
+<p><img alt="LLM Rec Illustration" loading="lazy" src="image.png"></p>
+<h2 id="resoning-pradigms">Resoning pradigms<a hidden class="anchor" aria-hidden="true" href="#resoning-pradigms">#</a></h2>
+<h3 id="react-reasoning-and-action"><strong>ReAct (Reasoning and Action)</strong><a hidden class="anchor" aria-hidden="true" href="#react-reasoning-and-action">#</a></h3>
+<p>With this paradigm, we can instruct agents to &ldquo;think&rdquo; and plan after each action taken and with each tool response to decide which tool to use next. These Think-Act-Observe loops are used to solve problems step by step and iteratively improve upon responses. Through the prompt structure,  agents continuously update their context with new reasoning. This can be interpreted as a form of Chain-of-Thought prompting. ( Learn more at the prompt engineering article )</p>
+<h3 id="rewoo-reasoning-without-observation"><strong>ReWOO (Reasoning WithOut Observation)</strong><a hidden class="anchor" aria-hidden="true" href="#rewoo-reasoning-without-observation">#</a></h3>
+<p>The ReWOO method, unlike ReAct, eliminates the dependence on tool outputs for action planning. Instead, agents plan upfront. Redundant tool usage is avoided by anticipating which tools to use upon receiving the initial prompt from the user. This is desirable from a human-centered perspective since the user can confirm the plan before it is executed.</p>
+<p>The ReWOO workflow is made up of three modules. In the planning module, the agent anticipates its next steps given a user&rsquo;s prompt. The next stage entails collecting the outputs produced by calling these tools. Lastly, the agent pairs the initial plan with the tool outputs to formulate a response. This planning ahead can greatly reduce token usage and computational complexity as well as the repercussions of intermediate tool failure.</p>
+<h2 id="types-of-ai-agents">Types of AI agents<a hidden class="anchor" aria-hidden="true" href="#types-of-ai-agents">#</a></h2>
+<p>AI agents can be developed to have varying levels of capabilities. There exists simple AI agents designed for solving and working on simple tasks, while there are high level complex AI agents that are responsible of solving complex tasks. Below the types of AI agents are cited from the simplest to the most complex:</p>
+<ol>
+<li>
+<p><strong>Simple Reflex Agents</strong></p>
+<p>A simple reflex agent operates strictly based on predefined rules and its immediate data.This agent does not hold any memory, nor does it interact with other agents if it is missing information. It will not respond to situations beyond a given event condition action rule. Hence, these agents are suitable for simple tasks that don’t require extensive training.</p>
+</li>
+<li>
+<p><strong>Model based reflex AI agents</strong></p>
+<p>Model-based reflex agents use both their current perception and memory to maintain an internal model of the world. As the agent continues to receive new information, the model is updated. The agent’s actions depend on its model, reflexes, previous precepts and current state.</p>
+<p>These agents, unlike simple reflex agents, can store information in memory and can operate in environments that are partially observable and changing. However, they are still limited by their set of rules.</p>
+</li>
+<li>
+<p><strong>Goal based agents</strong></p>
+<p>Goal-based agents, or rule-based agents, are AI agents with more robust reasoning capabilities. Besides evaluating the environment data, the agent compares different approaches to help it achieve the desired outcome. Goal-based agents always choose the most efficient path. They are suitable for performing complex tasks, such as natural language processing (NLP) and robotics applications.</p>
+</li>
+<li>
+<p><strong>Utility based Agents</strong></p>
+<p>A utility-based agent uses a complex reasoning algorithm to help users maximize the outcome they desire. The agent compares different scenarios and their respective utility values or benefits. Then, it chooses one that provides users with the most rewards. Utility is calculated using a utility function. This function assigns a utility value, a metric measuring the usefulness of an action or how “happy” it will make the agent, to each scenario based on a set of fixed criteria. The criteria can include factors such as progression toward the goal, time requirements, or computational complexity.</p>
+</li>
+<li>
+<p><strong>Learning Agents</strong></p>
+<p>Learning agents hold the same capabilities as the other agent types but are unique in their ability to learn. New experiences are added to their initial knowledge base, which occurs autonomously. This learning enhances the agent’s ability to operate in unfamiliar environments. Learning agents may be utility or goal-based in their reasoning and are comprised of four main elements:</p>
+<ul>
+<li><strong>Learning:</strong> This improves the agent’s knowledge by learning from the environment through its precepts and sensors.</li>
+<li><strong>Critic:</strong> This provides feedback to the agent on whether the quality of its responses meets the performance standard.</li>
+<li><strong>Performance:</strong> This element is responsible for selecting actions upon learning.</li>
+<li><strong>Problem generator:</strong> This creates various proposals for actions to be taken.</li>
+</ul>
+</li>
+<li>
+<p><strong>Hierarchical agents</strong></p>
+<p>Hierarchical agents are an organized group of intelligent agents arranged in tiers. The higher-level agents deconstruct complex tasks into smaller ones and assign them to lower-level agents. Each agent runs independently and submits a progress report to its supervising agent. The higher-level agent collects the results and coordinates subordinate agents to ensure they collectively achieve goals.</p>
+</li>
+</ol>
+<h2 id="benefits-of-ai-agents"><strong>Benefits of AI agents</strong><a hidden class="anchor" aria-hidden="true" href="#benefits-of-ai-agents">#</a></h2>
+<h3 id="improved-productivity"><strong>Improved productivity</strong><a hidden class="anchor" aria-hidden="true" href="#improved-productivity">#</a></h3>
+<p>AI agents are autonomous intelligent systems performing specific tasks without human intervention. Organizations use AI agents to achieve specific goals and more efficient business outcomes. Business teams are more productive when they delegate repetitive tasks to AI agents. This way, they can divert their attention to mission-critical or creative activities, adding more value to their organization.</p>
+<h3 id="reduced-costs"><strong>Reduced costs</strong><a hidden class="anchor" aria-hidden="true" href="#reduced-costs">#</a></h3>
+<p>Businesses can use intelligent agents to reduce unnecessary costs arising from process inefficiencies, human errors, and manual processes. You can confidently perform complex tasks because autonomous agents follow a consistent model that adapts to changing environments.</p>
+<h3 id="informed-decision-making"><strong>Informed decision-making</strong><a hidden class="anchor" aria-hidden="true" href="#informed-decision-making">#</a></h3>
+<p>Advanced intelligent agents use machine learning (ML) to gather and process massive amounts of real-time data. This allows business managers to make better predictions at pace when strategizing their next move. For example, you can use AI agents to analyze product demands in different market segments when running an ad campaign.</p>
+<h3 id="improved-customer-experience"><strong>Improved customer experience</strong><a hidden class="anchor" aria-hidden="true" href="#improved-customer-experience">#</a></h3>
+<p>Customers seek engaging and personalized experiences when interacting with businesses. Integrating AI agents allows businesses to personalize product recommendations, provide prompt responses, and innovate to improve customer engagement, conversion, and loyalty.</p>
+<h2 id="the-challenges-of-using-ai-agents"><strong>The challenges of using AI agents</strong><a hidden class="anchor" aria-hidden="true" href="#the-challenges-of-using-ai-agents">#</a></h2>
+<h3 id="multi-agent-dependencies"><strong>Multi-agent dependencies</strong><a hidden class="anchor" aria-hidden="true" href="#multi-agent-dependencies">#</a></h3>
+<p>Certain complex tasks require the knowledge of multiple AI agents. When implementing these multi-agent frameworks, there is a risk of malfunction. Multi-agent systems built on the same foundation models may experience shared pitfalls. Such weaknesses could cause a system-wide failure of all involved agents or expose vulnerability to adverse attacks. This highlights the importance of data governance in building foundation models and thorough training and testing processes.</p>
+<h3 id="infinite-feedback-loops"><strong>Infinite feedback loops</strong><a hidden class="anchor" aria-hidden="true" href="#infinite-feedback-loops">#</a></h3>
+<p>The convenience of the hands-off reasoning for human users using AI agents also comes with its risks. Agents that are unable to create a comprehensive plan or reflect on their findings, may find themselves repeatedly calling the same tools, invoking infinite feedback loops. To avoid these redundancies, some level of real-time human monitoring may be used.</p>
+<h3 id="computational-complexity"><strong>Computational complexity</strong><a hidden class="anchor" aria-hidden="true" href="#computational-complexity">#</a></h3>
+<p>Building AI agents from scratch is both time-consuming and can also be very computationally expensive. The resources required for training a high-performance agent can be extensive. Additionally, depending on the complexity of the task, agents can take several days to complete tasks.</p>
+<h2 id="a-good-practice-">A good Practice :<a hidden class="anchor" aria-hidden="true" href="#a-good-practice-">#</a></h2>
+<p><strong>Human supervision</strong></p>
+<p>To assist in the learning process for AI agents, especially in their early stages in a new environment, it can be helpful to provide occasional human feedback. This allows the AI agent to compare its performance to the expected standard and adjust accordingly. This form of feedback is helpful in improving the agent’s adaptability to user preferences.</p>
+<p>Apart from this, it is best practice to require human approval before an AI agent takes highly impactful actions. For instance, actions ranging from sending mass emails to financial trading should require human confirmation. Some level of human monitoring is recommended for such high-risk domains.</p>
+
+
+  </div>
+
+<footer class="post-footer">
+  <ul class="post-tags">
+    <li><a href="http://localhost:1313/ATK-LOG.github.io/blog/tags/agentic-ai/">Agentic AI</a></li>
+    <li><a href="http://localhost:1313/ATK-LOG.github.io/blog/tags/ai-agents/">AI Agents</a></li>
+  </ul>
+
+  <div class="post-socials" style="margin-top:1.5em; font-size:1.9em;">
+    <p>Connect with me:</p>
+    <a href="https://github.com/Taha2053" target="_blank" rel="noopener" aria-label="GitHub" style="margin-right:0.6em; color:inherit; text-decoration:none;">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/almouthana-taha-khalfallah-841237261/" target="_blank" rel="noopener" aria-label="LinkedIn" style="margin-right:0.6em; color:inherit; text-decoration:none;">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="" target="_blank" rel="noopener" aria-label="Instagram" style="margin-right:0.6em; color:inherit; text-decoration:none;">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="" target="_blank" rel="noopener" aria-label="YouTube" style="margin-right:0.6em; color:inherit; text-decoration:none;">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://x.com/khalfallah_taha" target="_blank" rel="noopener" aria-label="X (Twitter)" style="color:inherit; text-decoration:none;">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  </div>
+
+  </div>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/ATK-LOG.github.io/blog/">🍊 ATK&#39;Log</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

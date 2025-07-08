@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI Agents on 🍊 ATK&#39;Log</title>
-    <link>https://taha2053.github.io/ATK-LOG.github.io/tags/ai-agents/</link>
+    <link>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/ai-agents/</link>
     <description>Recent content in AI Agents on 🍊 ATK&#39;Log</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jan 2025 18:29:35 +0100</lastBuildDate>
-    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/tags/ai-agents/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/blog/tags/ai-agents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agentic AI</title>
-      <link>https://taha2053.github.io/ATK-LOG.github.io/posts/agentic_ai/agentic_ai/</link>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/agentic_ai/agentic_ai/</link>
       <pubDate>Wed, 29 Jan 2025 18:29:35 +0100</pubDate>
-      <guid>https://taha2053.github.io/ATK-LOG.github.io/posts/agentic_ai/agentic_ai/</guid>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/agentic_ai/agentic_ai/</guid>
       <description>&lt;h2 id=&#34;what-are-ai-agents-&#34;&gt;What are AI agents ?&lt;/h2&gt;
 &lt;p&gt;An artificial intelligence (AI) agent refers to a system or program that is capable of autonomously performing tasks on behalf of a user or another system by designing its workflow and utilizing available tools.&lt;/p&gt;
 &lt;p&gt;These agents can be implemented in various applications in order to solve and work on complex tasks in different fields from software design and IT automation to code generation, problem solving , conversational assistants, descision making , interacting with external environments and executing actions. They use advanced NLP  ( natural language processing ) techniques of large language models (LLMs) to comprehend and respond to user inputs step-by-step and determine when to call on external tools.&lt;/p&gt;</description>
