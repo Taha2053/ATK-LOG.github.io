@@ -2,24 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 🍊 ATK&#39;Log</title>
-    <link>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/</link>
+    <link>https://taha2053.github.io/ATK-LOG.github.io/tags/</link>
     <description>Recent content in Tags on 🍊 ATK&#39;Log</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2025 02:25:33 +0100</lastBuildDate>
-    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jan 2025 18:29:35 +0100</lastBuildDate>
+    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentic AI</title>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/tags/agentic-ai/</link>
+      <pubDate>Wed, 29 Jan 2025 18:29:35 +0100</pubDate>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/tags/agentic-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Agents</title>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/tags/ai-agents/</link>
+      <pubDate>Wed, 29 Jan 2025 18:29:35 +0100</pubDate>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/tags/ai-agents/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Context</title>
-      <link>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/context/</link>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/tags/context/</link>
       <pubDate>Wed, 01 Jan 2025 02:25:33 +0100</pubDate>
-      <guid>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/context/</guid>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/tags/context/</guid>
       <description></description>
     </item>
     <item>
       <title>Prompt</title>
-      <link>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/prompt/</link>
+      <link>https://taha2053.github.io/ATK-LOG.github.io/tags/prompt/</link>
       <pubDate>Wed, 01 Jan 2025 02:25:33 +0100</pubDate>
-      <guid>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/prompt/</guid>
+      <guid>https://taha2053.github.io/ATK-LOG.github.io/tags/prompt/</guid>
       <description></description>
     </item>
   </channel>
