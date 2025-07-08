@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>🍊 ATK&#39;Log</title>
-    <link>https://taha2053.github.io/ATK-LOG.github.io/blog/</link>
-    <description>Recent content on 🍊 ATK&#39;Log</description>
+    <title>Context on 🍊 ATK&#39;Log</title>
+    <link>https://taha2053.github.io/ATK-LOG.github.io/blog/tags/context/</link>
+    <description>Recent content in Context on 🍊 ATK&#39;Log</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jan 2025 02:25:33 +0100</lastBuildDate>
-    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taha2053.github.io/ATK-LOG.github.io/blog/tags/context/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prompt Engineering</title>
       <link>https://taha2053.github.io/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/</link>
