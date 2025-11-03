@@ -1,7 +1,7 @@
 
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #c9c9c9;
 }
 .row{
     display: flex;
@@ -40,7 +40,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background: #E3463A;
+    background: #e38e05;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -56,7 +56,7 @@
 
 }
 .tabcontents ul li span{
-    color: #E3463A;
+    color: #e38e05;
     font-size: 14px;
 }
 

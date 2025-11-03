@@ -22,7 +22,7 @@
                 <ul id="sidemenu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
                     <li><a href="#posts">Posts</a></li>
                     <!-- <li><a href="#chatbot">ChatBot</a></li> -->
                     <li><a href="#contact">Contact</a></li>
@@ -43,8 +43,8 @@
                     <!-- <a href="https://medium.com/@Almouthana_Taha_Khalfallah"><i class="fa-brands fa-medium"></i></a> -->
                     
                 </div>
-                <a href="Files/My CV - eng.pdf" download class="btn btn2">Download CV (EN)</a>
-                <a href="Files/My CV - fr.pdf" download class="btn btn2">Download CV (FR)</a>
+                <a href="Files/My CV - eng.pdf" download class="btn btn2">CV (EN)</a>
+                <a href="Files/My CV - fr.pdf" download class="btn btn2">CV (FR)</a>
                   
             </div>
         </div>
@@ -59,17 +59,17 @@
                 </div>
                 <div class="aboutcol2">
                     <h1 class="subtitle">About Me</h1>
-                    <p>Welcome to my corner of the digital world! I am an engineering student with a passion for applied mathematics, AI, and modeling. As I continue to explore the realms of AI, machine learning, and computational methods, I am dedicated to developing creative, efficient solutions to complex problems. Whether it's building innovative models, leveraging data, or exploring cutting-edge technologies like robotics and generative AI, my goal is to turn theoretical concepts into practical, impactful solutions. Join me on my journey as I push the boundaries of knowledge and technology!</p>
+                    <p>Welcome to my corner of the digital world! I am an engineering student with a passion for applied mathematics, AI, and modeling. As I continue to explore the realms of AI, machine learning, and computational methods, I am dedicated to developing creative, efficient solutions to complex problems. Whether it's building innovative models, leveraging data, or exploring cutting-edge technologies like generative AI, my goal is to turn theoretical concepts into practical, impactful solutions. Join me on my journey as I push the boundaries of knowledge and technology!</p>
                 
                     <div class="tabtitles">
                         <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
-                        <p class="tablinks" onclick="opentab('experience')"">Experience</p>
-                        <p class="tablinks" onclick="opentab('education')"">Education</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tabcontents activetab" id="skills">
                         <ul>
-                            <li><span>Programming Languages:</span><br>Python, SQL, C, C++, HTML, CSS</li>
-                            <li><span>Data Analysis & Visualization:</span><br>PowerBI, Pandas, NumPy, Matplotlib, Seaborn</li>
+                            <li><span>Programming Languages:</span><br>Python, SQL, JAVA, C, C++, HTML, CSS, JavaScript</li>
+                            <li><span>Data Analysis & Visualization:</span><br>PowerBI, Pandas, NumPy, Matplotlib, Seaborn, R</li>
                             <li><span>Simulation & Modeling Tools: </span><br>Matlab</li>
                             <li><span>Other Tools: </span><br>Git, Github</li>
                             <!-- <li><span>AI & NLP: </span><br>AI & NLP: ChatGPT API, DeepSeek-R1 API</li>       -->
@@ -136,7 +136,7 @@
                     <div class="tabcontents" id="education">
                         <ul>
                             <li><span>Pre-engineering Degree</span><br>2 years</li>
-                            <li><span>Current Education</span><br>1st-year Applied Mathematics and Modeling student at ENSIT, specializing in Data Science and AI.</li>                       
+                            <li><span>Current Education</span><br>2nd-year Applied Mathematics and Modeling student at ENSIT, specializing in Data Science and AI.</li>                       
                         </ul>
                     </div>
                 </div>
@@ -161,9 +161,9 @@
                 <div class="work">
                     <img src="Images/work1.png">
                     <div class="layer">
-                        <h3>Project2</h3>
-                        <p>Description of project 2</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>HealthCast</h3>
+                        <p>Following the participation in SENECA HACK 2025, Healthcast is an AI-powered app that transforms a simple natural language prompt about your health, lifestyle, and goals into a personalized fitness & nutrition plan. It produces an engaging podcast-style audio file along with a short markdown summary that acts as a quick guide.</p>
+                        <a href="https://github.com/Taha2053/healthcast"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -180,7 +180,7 @@
     </div>
 
 <!--------services------->
-<div id="services">
+<!-- <div id="services">
     <div class="container">
         <h1 class="subtitle">My Services - Not available yet</h1>
         <div class="serviceslist">
@@ -204,7 +204,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!---------Posts------------->
 <div id="posts">
@@ -262,8 +262,9 @@
                     <!-- <a href="https://medium.com/@Almouthana_Taha_Khalfallah"><i class="fa-brands fa-medium"></i></a> -->
                         
                     </div>
-                    <a href="Files/My CV - eng.pdf" download class="btn btn2">Download CV (EN)</a>
-                    <a href="Files/My CV - fr.pdf" download class="btn btn2">Download CV (FR)</a>                </div>
+                    <a href="Files/My CV - eng.pdf" download class="btn btn2">CV (EN)</a>
+                    <a href="Files/My CV - fr.pdf" download class="btn btn2">CV (FR)</a>               
+                </div>
                 <div class="contactright">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
@@ -275,11 +276,14 @@
                 </div>
             </div>
         </div>
+        
         <div class="copyright">
             <p>
                 Copyright © Almouthana Taha Khalfallah. 2025 All rights reserved
             </p>
         </div>
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+
     </div>
     
 <script>
@@ -328,6 +332,28 @@
         .catch(error => console.error('Error!', error.message))
     })
 </script>
+
+
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    const headerHeight = document.getElementById("header").offsetHeight;
+    if (window.scrollY > headerHeight) {
+      scrollTopBtn.classList.add("show");
+    } else {
+      scrollTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
 
 </body>
 </html>

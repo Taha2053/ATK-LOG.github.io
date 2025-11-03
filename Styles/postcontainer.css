@@ -44,7 +44,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #E3463A; 
+    background: #e38e05; 
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -100,7 +100,7 @@ nav {
 
 .post h2 {
     font-size: 24px;
-    color: #E3463A;
+    color: #e38e05;
     margin-bottom: 15px;
 }
 
@@ -116,7 +116,7 @@ nav {
 
 .post .tags a {
     text-decoration: none;
-    color: #E3463A; 
+    color: #e38e05; 
     font-size: 14px;
     margin-right: 10px;
     padding: 3px 10px;
@@ -126,18 +126,18 @@ nav {
 }
 
 .post .tags a:hover {
-    background-color: #E3463A; 
+    background-color: #e38e05; 
     color: white;
 }
 
 .post a {
     text-decoration: none;
-    color: #E3463A; 
+    color: #e38e05; 
     font-size: 14px;
     display: inline-block;
     transition: color 0.3s ease;
 }
 
 .post a:hover {
-    color: #E3463A; 
+    color: #e38e05; 
 }

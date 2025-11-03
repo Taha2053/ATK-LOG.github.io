@@ -11,7 +11,7 @@
 }
 
 .contactleft p i{
-    color: #E3463A;
+    color: #e38e05;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -30,14 +30,14 @@
 }
 
 .socialicons a:hover{
-    color: #E3463A;
+    color: #e38e05;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
     padding: 10px 20px 10px 20px;
-    background: #E3463A;
+    background: #e38e05;
     font-size: 20px;
 }
 .contactright form{
@@ -67,7 +67,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #020C1B;
+    background: #030912;
     font-weight:300 ;
     margin-top: 20px;
 }

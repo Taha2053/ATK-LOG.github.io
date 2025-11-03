@@ -26,7 +26,7 @@
 .layer{
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1),#E3463A);
+    background: linear-gradient(rgba(0,0,0,0.1),#e38e05);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -50,7 +50,7 @@
 
 .layer a{
     margin-top: 20px;
-    color: #E3463A;
+    color: #e38e05;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -72,7 +72,7 @@
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #E3463A;
+    border: 1px solid #e38e05;
     padding: 14px 50px;
     border-radius: 10px;
     text-decoration: none;
@@ -80,5 +80,5 @@
     transition: 0.5s;
 }
 .btn:hover{
-    background: #E3463A;
+    background: #e38e05;
 }
