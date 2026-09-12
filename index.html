@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATK'Log</title>
-    <link rel="icon" href="Images/emoji_image.png" type="image/png">
+    <link rel="icon" href="Images/landingpage/orange-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Cormorant+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/general.css">
     <link rel="stylesheet" href="Styles/about.css">
-    <link rel="stylesheet" href="Styles/services.css">
     <link rel="stylesheet" href="Styles/projects.css">
     <link rel="stylesheet" href="Styles/contact.css">
     <link rel="stylesheet" href="Styles/phonescreencss.css">
@@ -15,292 +17,379 @@
     <script src="https://kit.fontawesome.com/d72947389b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href="index.html" style="text-decoration: none; color: inherit;"><h1>🍊 ATK'Log</h1></a>
-                <ul id="sidemenu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
-                    <li><a href="#posts">Posts</a></li>
-                    <!-- <li><a href="#chatbot">ChatBot</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="headertext">
-                <p>Exploring Data & AI</p>
-                <h1>Hi, I'm Almouthana Taha <br> Khalfallah</h1>
-                <div class="socialicons">
-                    <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-                    <a href="https://github.com/Taha2053", target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/almouthana-taha-khalfallah-841237261/", target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <!-- <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a> -->
-                    <a href="https://x.com/khalfallah_taha", target ="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
-                    <!-- <a href="https://medium.com/@Almouthana_Taha_Khalfallah"><i class="fa-brands fa-medium"></i></a> -->
-                    
-                </div>
-                <a href="Files/My CV - eng.pdf" download class="btn btn2">CV (EN)</a>
-                <a href="Files/My CV - fr.pdf" download class="btn btn2">CV (FR)</a>
-                  
-            </div>
-        </div>
-    </div>
+    <nav>
+        <a href="index.html" style="text-decoration: none; color: inherit;"><h1><img src="Images/landingpage/orange-icon.png" alt="Orange icon" class="nav-icon"> ATK'Log</h1></a>
+        <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
 
-<!-------about----->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="aboutcol1">
-                    <img src="Images/user.png" >
+    <div class="site-layout">
+        <!-- 1/3 Left Column: Static & Non-Scrollable -->
+        <aside class="sidebar-col">
+            <div class="sidebar-inner">
+                <div class="sidebar-bio">
+                    <div class="sidebar-img-wrap">
+                        <img src="Images/taha-white-shirt.jpg" alt="Almouthana Taha Khalfallah" class="sidebar-bio-img">
+                    </div>
+                    <h2 class="sidebar-name">Almouthana Taha Khalfallah</h2>
+                    <p class="sidebar-tagline"><strong>Applied Mathematics</strong> &amp; <strong>Data Science</strong> engineering student at <strong>ENSIT</strong> (<strong>1st in cohort</strong>). Passionate about <strong>Machine Learning</strong>, <strong>Agentic AI</strong>, and computational modeling to turn theoretical concepts into impactful solutions.</p>
                 </div>
-                <div class="aboutcol2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>Welcome to my corner of the digital world! I am an engineering student with a passion for applied mathematics, AI, and modeling. As I continue to explore the realms of AI, machine learning, and computational methods, I am dedicated to developing creative, efficient solutions to complex problems. Whether it's building innovative models, leveraging data, or exploring cutting-edge technologies like generative AI, my goal is to turn theoretical concepts into practical, impactful solutions. Join me on my journey as I push the boundaries of knowledge and technology!</p>
-                
-                    <div class="tabtitles">
-                        <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
-                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
-                        <p class="tablinks" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tabcontents activetab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages:</span><br>Python, SQL, JAVA, C, C++, HTML, CSS, JavaScript</li>
-                            <li><span>Data Analysis & Visualization:</span><br>PowerBI, Pandas, NumPy, Matplotlib, Seaborn, R</li>
-                            <li><span>Simulation & Modeling Tools: </span><br>Matlab</li>
-                            <li><span>Other Tools: </span><br>Git, Github</li>
-                            <!-- <li><span>AI & NLP: </span><br>AI & NLP: ChatGPT API, DeepSeek-R1 API</li>       -->
-                            <!-- <li><span>Programming Languages: </span><br>Python, C, JavaScript, R, SQL, MATLAB</li>
-                            <li><span>Data Science & Engineering: </span><br>Data Analysis & Manipulation: Pandas, NumPy, Dask, Vaex</li>
-                            <li><span>Data Visualization: </span><br>Matplotlib, Seaborn, Plotly, Tableau, Power BI, Google Data Studio</li>
-                            <li><span>Data Processing & Cleaning: </span><br>SQL, Power Query, Excel, OpenRefine</li>
-                            <li><span>Data Wrangling & ETL: </span><br>Apache Spark, Apache Kafka, Talend</li>
-                            <li><span>Big Data Technologies: </span><br>Hadoop, Hive, MapReduce</li>
-                            <li><span>Machine Learning (ML) & Deep Learning (DL): </span><br>Supervised Learning: Scikit-learn, XGBoost, LightGBM, CatBoost</li>
-                            <li><span>Unsupervised Learning: </span><br>K-Means, DBSCAN, PCA, Autoencoders</li>
-                            <li><span>Deep Learning Frameworks: </span><br>TensorFlow, Keras, PyTorch</li>
-                            <li><span>Neural Networks: </span><br>CNNs, RNNs, LSTMs, GANs</li>
-                            <li><span>Model Optimization: </span><br>Hyperparameter tuning, GridSearchCV, RandomSearchCV, Optuna</li>
-                            <li><span>AI & NLP: </span><br>Natural Language Processing: spaCy, NLTK, Gensim, Hugging Face, BERT, GPT</li>
-                            <li><span>Text Preprocessing: </span><br>Tokenization, Lemmatization, Stopword Removal, Named Entity Recognition (NER)</li>
-                            <li><span>Text Classification: </span><br>TF-IDF, Word2Vec, Doc2Vec, BERT, Transformer models</li>
-                            <li><span>Chatbots & Conversational AI: </span><br>Dialogflow, Rasa, OpenAI API</li>
-                            <li><span>Sentiment Analysis & Text Generation: </span><br>LSTM, GPT, BERT</li>
-                            <li><span>Recommendation Systems: </span><br>Collaborative Filtering, Content-Based, Hybrid Models</li>
-                            <li><span>Cloud & Infrastructure: </span><br>AWS, Google Cloud, Microsoft Azure</li>
-                            <li><span>Data Storage & Databases: </span><br>MySQL, PostgreSQL, MongoDB, NoSQL, Hadoop HDFS, Google BigQuery</li>
-                            <li><span>Containerization & Virtualization: </span><br>Docker, Kubernetes</li>
-                            <li><span>Data Pipelines: </span><br>Apache Airflow, Luigi, Prefect</li>
-                            <li><span>Version Control & Collaboration: </span><br>Git, GitHub, GitLab, Bitbucket</li>
-                            <li><span>Continuous Integration/Continuous Deployment (CI/CD) Pipelines: </span><br>Jenkins, GitLab CI, Travis CI</li>
-                            <li><span>Robotics & Simulations: </span><br>ROS (Robot Operating System), Arduino, Raspberry Pi</li>
-                            <li><span>Simulation & Modeling Tools: </span><br>Simulink, COMSOL, AnyLogic</li>
-                            <li><span>Machine Learning & Deep Learning: </span><br>Reinforcement Learning: OpenAI Gym, RLlib, Stable-Baselines</li>
-                            <li><span>Transfer Learning & Fine-Tuning: </span><br>Pre-trained models</li>
-                            <li><span>Generative AI (GenAI): </span><br>GANs, Variational Autoencoders (VAE), DALL·E, CLIP</li>
-                            <li><span>Style Transfer & Text-to- Image Models: </span><br>Stable Diffusion, MidJourney</li>
-                            <li><span>Transformer Models: </span><br>T5, RoBERTa, GPT-3, GPT-4</li>
-                            <li><span>Speech Recognition & Synthesis: </span><br>Google Speech-to-Text, OpenAI Whisper, DeepSpeech</li>
-                            <li><span>AI-powered Chatbots: </span><br>Advanced conversational models using Rasa, OpenAI API</li>
-                            <li><span>Cloud Computing & Distributed Systems: </span><br>AWS SageMaker, Google AI Platform, Azure Machine Learning</li>
-                            <li><span>Big Data Processing: </span><br>Apache Flink, Apache Beam, Dask</li>
-                            <li><span>Quantum Computing: </span><br>Qiskit, Cirq, IBM Quantum</li>
-                            <li><span>Quantum Machine Learning: </span><br>Basic concepts and implementation</li>
-                            <li><span>Autonomous Systems: </span><br>Autonomous Vehicles: Lidar, sensor fusion, autonomous driving algorithms</li>
-                            <li><span>Robotics Simulation: </span><br>V-REP, Gazebo, Unity Robotics</li>
-                            <li><span>Data Engineering: </span><br>Data Orchestration & Pipelines: Airflow, Dagster, Kedro</li>
-                            <li><span>Data Warehouse Technologies: </span><br>Snowflake, Redshift, Google BigQuery</li>
-                            <li><span>Data Streaming & Real-time Analytics: </span><br>Apache Kafka, Apache Flink, Apache Pulsar</li> -->
-                                      
-                        </ul>
-                    </div>
-                    <div class="tabcontents" id="experience">
-                        <ul>
-                            <!-- <li><span>Data Science</span><br>Exploring and analyzing large datasets to extract meaningful insights using machine learning and statistical methods.</li> -->
-                            <!-- <li><span>Machine Learning</span><br>Applying algorithms to develop predictive models and improve decision-making processes.</li> -->
-                            <!-- <li><span>Mathematical Modeling</span><br>Creating mathematical representations to simulate real-world phenomena and solve complex problems.</li> -->
-                            <li><span>Internship - Excellia Solutions</span><br>
-                            - Explored concepts such as RAG (Retrieval-Augmented Generation) systems and discovered Streamlit for deploying AI applications<br>
-                            - Gained familiarity with Python libraries including Scikit-Learn, Pandas, and Matplotlib for prototyping machine learning models<br>
-                            - Observed agile workflows, particularly the use of JIRA and GitLab by development teams<br>
-                            - Completed Microsoft AI-900 and AI-102 courses, including hands-on labs on Azure AI services<br>
-                            </li>
-                            <!-- <li><span>Data Visualization</span><br>Utilizing tools like Power BI and Excel to present data insights through intuitive and interactive visualizations.</li> -->
-                            <!-- <li><span>AI and Simulation</span><br>Exploring applications of AI and creating simulations to solve challenges in fields like robotics and generative AI.</li> -->
-                        </ul>
-                        
-                    </div>
-                    <div class="tabcontents" id="education">
-                        <ul>
-                            <li><span>Pre-engineering Degree</span><br>2 years</li>
-                            <li><span>Current Education</span><br>2nd-year Applied Mathematics and Modeling student at ENSIT, specializing in Data Science and AI.</li>                       
-                        </ul>
+
+                <div class="sidebar-socials">
+                    <a href="https://github.com/Taha2053" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/almouthana-taha-khalfallah-841237261/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v7.6H9.2v-7.6H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+                    </a>
+                    <a href="https://x.com/khalfallah_taha" target="_blank" rel="noopener noreferrer" title="X / Twitter" aria-label="X / Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+
+                <div class="sidebar-cvs">
+                    <a href="Files/My_CV___eng.pdf" download class="btn btn2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        <span>CV (EN)</span>
+                    </a>
+                    <a href="Files/My_CV___fr.pdf" download class="btn btn2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        <span>CV (FR)</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- 2/3 Right Column: Scrollable Content -->
+        <main class="content-col">
+            <div id="header">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-img-wrap">
+                            <picture>
+                                <source srcset="Images/landingpage/hero.webp" type="image/webp">
+                                <img src="Images/landingpage/hero.png" alt="Classical scholar drafting mathematics and neural networks" class="hero-img" width="1672" height="941" fetchpriority="high">
+                            </picture>
+                        </div>
+                        <div class="hero-text-wrap">
+                            <p class="hero-tag">Welcome to my portfolio</p>
+                            <h1 class="hero-headline">Exploring Data &amp; AI</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <!-------about----->
+            <div id="about">
+                <div class="container">
+                    <div class="about-layout">
+                        <div class="about-content">
+                            <h1 class="subtitle">About Me</h1>
+                            <p>Welcome to my corner of the digital world! I am an engineering student with a passion for applied mathematics, AI, and modeling. As I continue to explore the realms of AI, machine learning, and computational methods, I am dedicated to developing creative, efficient solutions to complex problems. Whether it's building innovative models, leveraging data, or exploring cutting-edge technologies like generative AI, my goal is to turn theoretical concepts into practical, impactful solutions. Join me on my journey as I push the boundaries of knowledge and technology!</p>
+
+                            <div class="about-section">
+                                <h2 class="about-title">Education</h2>
+                                <ul class="about-list">
+                                    <li>
+                                        <span>National Higher School of Engineers of Tunis (ENSIT)</span> (2026 – Present)<br>
+                                        Research Master's Degree in Data Science
+                                    </li>
+                                    <li>
+                                        <span>National Higher School of Engineers of Tunis (ENSIT)</span> (2024 – Present)<br>
+                                        Engineering Degree in Applied Mathematics and Modeling — <em>1<sup>st</sup> in Cohort</em>
+                                    </li>
+                                    <li>
+                                        <span>Preparatory Institute for Engineering Studies of Tunis (IPEIT)</span> (2022 – 2024)<br>
+                                        Preparatory Degree in Physics and Chemistry (PC)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="about-section">
+                                <h2 class="about-title">Experience</h2>
+                                <ul class="about-list">
+                                    <li>
+                                        <span>AI Intern — SIGA</span> (Jun 2026 – Jul 2026)<br>
+                                        Developed an autonomous HR agent within Oracle APEX automating leave management, employee requests, and document verification workflows using an OCR and LLM pipeline integrated with PL/SQL backend routines.
+                                    </li>
+                                    <li>
+                                        <span>AI Intern — EXCELLIA Solutions</span> (Jun 2025)<br>
+                                        Explored RAG systems and Streamlit for AI application deployment, prototyped ML models with Scikit-Learn, Pandas, and Matplotlib, and completed practical labs on Azure AI services (AI-900, AI-102).
+                                    </li>
+                                    <li>
+                                        <span>Global Finalist &amp; Researcher — GCD4F 9 (Beijing, China)</span> (Jan 2026 – Oct 2026)<br>
+                                        Qualified for Global Finals in Beijing with MindEase; co-authoring a research paper on its 3-layer cognitive architecture and on-device Q-learning reinforcement learning agent.
+                                    </li>
+                                    <li>
+                                        <span>Open Source Contributor — WnR</span> (1.1k+ stars)<br>
+                                        Added Arabic and French localization with full RTL support and a Unicode bidi-isolation fix for the open-source productivity app.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="about-section">
+                                <h2 class="about-title">Skills</h2>
+                                <ul class="about-list">
+                                    <li><span>Programming Languages:</span> Python, C, C++, MATLAB, SQL, PL/SQL, TypeScript, JavaScript, HTML, CSS, WinDev (WLanguage)</li>
+                                    <li><span>Libraries &amp; Data Science:</span> NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn, TensorFlow, PyTorch, OpenCV, Hugging Face, Ollama, NetworkX</li>
+                                    <li><span>Frameworks &amp; Technologies:</span> FastAPI, React, Vite, Streamlit, Oracle APEX, Supabase, PostgreSQL</li>
+                                    <li><span>Cloud &amp; DevOps:</span> Microsoft Azure, Linux, Docker, Git, GitHub, GitHub Actions, Vercel, Netlify, Render</li>
+                                    <li><span>Core Concepts:</span> Machine Learning, Deep Learning, RAG, Reinforcement Learning (Q-Learning, PPO), Knowledge Graphs, Agentic Systems, MCP, Tokenization</li>
+                                    <li><span>Languages:</span> Arabic (Native), French (Fluent), English (Fluent – TOEIC 900/990)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about-img-wrap">
+                            <picture>
+                                <source srcset="Images/landingpage/engineering.webp" type="image/webp">
+                                <img src="Images/landingpage/engineering.png" alt="Engineering drafting and mathematics illustration" class="about-img" width="1671" height="941" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 <!--------Projects------->
     <div id="projects">
         <div class="container">
-            <h1 class="subtitle">My Projects</h1>
-            <div class="worklist">
-                <div class="work">
-                    <img src="Images/work1.png">
-                    <div class="layer">
-                        <h3>Learning with projects</h3>
-                        <p>A collection of hands-on machine learning projects built to deepen my understanding of data science, ML, AI, and related technologies.</p>
-                        <a href="https://github.com/Taha2053/learning_with_projects", target="_blank"><i class="fa-solid fa-link"></i></a>
+            <div class="projects-layout">
+                <div class="projects-img-wrap">
+                    <picture>
+                        <source srcset="Images/landingpage/about.webp" type="image/webp">
+                        <img src="Images/landingpage/about.png" alt="Projects illustration" class="projects-img" width="1536" height="1024" loading="lazy">
+                    </picture>
+                    <div class="see-more-wrap">
+                        <a href="https://github.com/Taha2053" class="blueprint-btn blueprint-btn-blue blueprint-btn--see-more" target="_blank">See More →</a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="Images/work1.png">
-                    <div class="layer">
-                        <h3>HealthCast</h3>
-                        <p>Following the participation in SENECA HACK 2025, Healthcast is an AI-powered app that transforms a simple natural language prompt about your health, lifestyle, and goals into a personalized fitness & nutrition plan. It produces an engaging podcast-style audio file along with a short markdown summary that acts as a quick guide.</p>
-                        <a href="https://github.com/Taha2053/healthcast"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/work1.png">
-                    <div class="layer">
-                        <h3>Project3</h3>
-                        <p>Description of project 3</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                <div class="projects-content">
+                    <h1 class="subtitle">My Projects</h1>
+                    <div class="blueprint-matrix projects-matrix">
+                        <div class="matrix-cell">
+                            <span class="corner-handle ch-tl"></span>
+                            <span class="corner-handle ch-tr"></span>
+                            <span class="corner-handle ch-bl"></span>
+                            <span class="corner-handle ch-br"></span>
+                            <div class="matrix-cell-header">
+                                <span class="matrix-cell-num">01 //</span>
+                                <span class="matrix-cell-title">MINDEASE</span>
+                            </div>
+                            <p class="matrix-cell-body">AI-native browser extension restructuring web pages into multi-modal representations for neurodiverse learners, featuring an on-device Q-learning agent and LLM synthesis. GCD4F 9 Global Finalist.</p>
+                            <div class="matrix-cell-actions">
+                                <a href="https://github.com/Taha2053/MindEase" target="_blank" class="blueprint-btn blueprint-btn-blue">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="matrix-cell">
+                            <span class="corner-handle ch-tl"></span>
+                            <span class="corner-handle ch-tr"></span>
+                            <span class="corner-handle ch-bl"></span>
+                            <span class="corner-handle ch-br"></span>
+                            <div class="matrix-cell-header">
+                                <span class="matrix-cell-num">02 //</span>
+                                <span class="matrix-cell-title">MINDMATE</span>
+                            </div>
+                            <p class="matrix-cell-body">Local memory system for LLMs combining semantic vector retrieval with knowledge graphs and a PPO reinforcement learning policy to dynamically prioritize relevant memories at inference.</p>
+                            <div class="matrix-cell-actions">
+                                <a href="https://github.com/Taha2053/MindMate" target="_blank" class="blueprint-btn blueprint-btn-blue">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="matrix-cell">
+                            <span class="corner-handle ch-tl"></span>
+                            <span class="corner-handle ch-tr"></span>
+                            <span class="corner-handle ch-bl"></span>
+                            <span class="corner-handle ch-br"></span>
+                            <div class="matrix-cell-header">
+                                <span class="matrix-cell-num">03 //</span>
+                                <span class="matrix-cell-title">MICROGRAD RECONSTRUCTION</span>
+                            </div>
+                            <p class="matrix-cell-body">A Python autograd engine implementing reverse-mode automatic differentiation and backpropagation from scratch, with a custom neural network library on top.</p>
+                            <div class="matrix-cell-actions">
+                                <a href="https://github.com/Taha2053/micrograd_rebuilding" target="_blank" class="blueprint-btn blueprint-btn-blue">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="matrix-cell">
+                            <span class="corner-handle ch-tl"></span>
+                            <span class="corner-handle ch-tr"></span>
+                            <span class="corner-handle ch-bl"></span>
+                            <span class="corner-handle ch-br"></span>
+                            <div class="matrix-cell-header">
+                                <span class="matrix-cell-num">04 //</span>
+                                <span class="matrix-cell-title">LEARNING WITH PROJECTS</span>
+                            </div>
+                            <p class="matrix-cell-body">A collection of hands-on machine learning projects built to deepen understanding of data science, predictive modeling, deep learning architectures, and AI algorithms.</p>
+                            <div class="matrix-cell-actions">
+                                <a href="https://github.com/Taha2053/learning_with_projects" target="_blank" class="blueprint-btn blueprint-btn-blue">View Project →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/Taha2053" class="btn", target="_blank">See More</a>
         </div>
     </div>
-
-<!--------services------->
-<!-- <div id="services">
-    <div class="container">
-        <h1 class="subtitle">My Services - Not available yet</h1>
-        <div class="serviceslist">
-            <div>
-                <i class="fa-solid fa-database"></i> 
-                <h2>Data Cleaning and Preparation</h2>
-                <p>I offer freelance data cleaning and preparation services to help you transform raw data into accurate, reliable, and analysis-ready formats. Whether you're working with messy datasets or incomplete data, I specialize in cleaning and preprocessing data to remove inconsistencies, handle missing values, and standardize formats. My services include data wrangling, outlier detection, data transformation, and feature engineering to ensure that your data is well-organized and ready for analysis, machine learning models, or reporting. By ensuring your data is of the highest quality, I help you make informed decisions based on accurate and actionable insights.</p>
-                <a href="#contact">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-code-branch"></i>                  
-                <h2>Data Analysis</h2>
-                <p>I offer freelance data analysis services to help individuals and businesses make data-driven decisions. With a focus on accuracy and clarity, I work with clients to clean, analyze, and interpret data to uncover insights that drive actionable outcomes. Using tools like Power BI and Excel, I provide customized solutions ranging from basic data cleaning and reporting to complex analysis and predictive modeling. Whether you're looking to improve operational efficiency, track performance, or gain a deeper understanding of your data, my services are designed to meet your unique needs and objectives.</p>
-                <a href="#contact">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-hexagon-nodes-bolt"></i>
-                <h2>Business Intelligence Solutions</h2>
-                <p>As a freelance Business Intelligence (BI) consultant, I provide data-driven solutions that help businesses make better, more informed decisions. By leveraging powerful tools like Power BI, Excel, and other BI platforms, I deliver customized dashboards, reports, and data visualizations that present key metrics in a clear and actionable format. I specialize in creating interactive, real-time dashboards that allow businesses to monitor performance, track trends, and uncover valuable insights. Whether you're looking to optimize operations, improve sales, or gain a deeper understanding of your data, I can help you unlock the full potential of your business data through intelligent, data-centric solutions.</p>
-                <a href="#contact">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <!---------Posts------------->
 <div id="posts">
     <div class="container">
-        <h1 class="subtitle">My Posts</h1>
-        <div class="postslist">
-            <div>
-                <i class="fa-regular fa-newspaper"></i>                   
-                <h2>Understanding Prompt Engineering</h2>
-                <p>The article explains the fundamentals of prompt engineering, focusing on techniques for crafting effective prompts to guide AI models towards desired outputs.</p>
-                <a href="https://taha2053.github.io/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/">Learn more</a>
+        <div class="posts-layout">
+            <div class="posts-content">
+                <h1 class="subtitle">My Posts</h1>
+                <div class="blueprint-matrix posts-matrix">
+                    <div class="matrix-cell">
+                        <span class="corner-handle ch-tl"></span>
+                        <span class="corner-handle ch-tr"></span>
+                        <span class="corner-handle ch-bl"></span>
+                        <span class="corner-handle ch-br"></span>
+                        <div class="matrix-cell-header">
+                            <span class="matrix-cell-num">01 //</span>
+                            <span class="matrix-cell-title">PROMPT ENGINEERING</span>
+                        </div>
+                        <p class="matrix-cell-body">The article explains the fundamentals of prompt engineering, focusing on techniques for crafting effective prompts to guide AI models towards desired outputs.</p>
+                        <div class="matrix-cell-actions">
+                            <a href="https://taha2053.github.io/ATK-LOG.github.io/blog/posts/prompt_engineering/prompt_engineering/" class="blueprint-btn blueprint-btn-blue">Read Article →</a>
+                        </div>
+                    </div>
+                    <div class="matrix-cell">
+                        <span class="corner-handle ch-tl"></span>
+                        <span class="corner-handle ch-tr"></span>
+                        <span class="corner-handle ch-bl"></span>
+                        <span class="corner-handle ch-br"></span>
+                        <div class="matrix-cell-header">
+                            <span class="matrix-cell-num">02 //</span>
+                            <span class="matrix-cell-title">AGENTIC AI</span>
+                        </div>
+                        <p class="matrix-cell-body">AI agents are autonomous systems that perform complex tasks, plan, learn, and adapt. They differ from chatbots by utilizing tools and making independent decisions. The article highlights their architecture, types, and the need for human supervision.</p>
+                        <div class="matrix-cell-actions">
+                            <a href="https://taha2053.github.io/ATK-LOG.github.io/blog/posts/agentic_ai/agentic_ai/" class="blueprint-btn blueprint-btn-blue">Read Article →</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <i class="fa-regular fa-newspaper"></i>                   
-                <h2>Agentic AI</h2>
-                <p>AI agents are autonomous systems that perform complex tasks, plan, learn, and adapt. They differ from chatbots by utilizing tools and making independent decisions. The article highlights their architecture, types, and the need for human supervision.</p>
-                <a href="https://taha2053.github.io/ATK-LOG.github.io/blog/posts/agentic_ai/agentic_ai/">Learn more</a>
-            </div>
-            <!-- 
-            <div>
-                <i class="fa-regular fa-newspaper"></i>
-                <h2>Exploring Quantum Computing</h2>
-                <p>Quantum computing is transforming the tech industry. This article covers the basics of quantum computing and its potential applications.</p>
-                <a href="posts.html">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-regular fa-newspaper"></i>
-                <h2>The Future of Data Science</h2>
-                <p>Data science continues to evolve with new tools and techniques. This post explores emerging trends and the future of data science in various industries.</p>
-                <a href="posts.hmtl">Learn more</a>
+            <div class="posts-img-wrap">
+                <picture>
+                    <source srcset="Images/landingpage/neuralnets.webp" type="image/webp">
+                    <img src="Images/landingpage/neuralnets.png" alt="Neural networks illustration" class="posts-img" width="1536" height="1024" loading="lazy">
+                </picture>
+                <div class="see-more-wrap">
+                    <a href="/ATK-LOG.github.io/blog/posts" target="_blank" rel="noopener noreferrer" class="blueprint-btn blueprint-btn-blue blueprint-btn--see-more">See More →</a>
+                </div>
             </div>
         </div>
-        <a href="posts.html" class="btn">See More</a>
-        -->
     </div>
-    <!-- <a href="posts.html" class="btn">See More</a> -->
-    <a href="/ATK-LOG.github.io/blog/posts" target="_blank" rel="noopener noreferrer" class="btn">See More</a>
 </div>
 
 <!--------Contact-------->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contactleft">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i><a style="color: white;" href="mailto:almouthana.taha.khalfallah@gmail.com">almouthana.taha.khalfallah@gmail.com</a></p>
-                    <!-- <p><i class="fa-solid fa-phone"></i>+216 0123456789</p> -->
-                    <div class="socialicons">
-                    <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-                    <a href="https://github.com/Taha2053", target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/almouthana-taha-khalfallah-841237261/", target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <!-- <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a> -->
-                    <a href="https://x.com/khalfallah_taha", target ="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
-                    <!-- <a href="https://medium.com/@Almouthana_Taha_Khalfallah"><i class="fa-brands fa-medium"></i></a> -->
-                        
+        <div class="blueprint-wrapper">
+            <div class="blueprint-header-bar">
+                <div class="blueprint-tag">DIRECTORY // GET IN TOUCH</div>
+            </div>
+
+            <div class="blueprint-body">
+                <div class="blueprint-left">
+                    <h2 class="blueprint-headline">Let’s collaborate.</h2>
+                    <p class="blueprint-subtext">Open for freelance data engineering, BI consulting, and machine learning solutions.</p>
+                    <div class="blueprint-illustration-wrap">
+                        <picture>
+                            <source srcset="Images/landingpage/exploring.webp" type="image/webp">
+                            <img src="Images/landingpage/exploring.png" alt="Exploring data and AI illustration" class="blueprint-illustration" width="1671" height="941" loading="lazy" decoding="async">
+                        </picture>
                     </div>
-                    <a href="Files/My CV - eng.pdf" download class="btn btn2">CV (EN)</a>
-                    <a href="Files/My CV - fr.pdf" download class="btn btn2">CV (FR)</a>               
                 </div>
-                <div class="contactright">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+
+                <!-- Right column: 2x2 capability & contact matrix -->
+                <div class="blueprint-matrix">
+                    <!-- Quadrant 01: Direct Email (Active Accent Card) -->
+                    <div class="matrix-cell active-cell">
+                        <span class="corner-handle ch-tl"></span>
+                        <span class="corner-handle ch-tr"></span>
+                        <span class="corner-handle ch-bl"></span>
+                        <span class="corner-handle ch-br"></span>
+                        <div class="matrix-cell-header">
+                            <span class="matrix-cell-num">01 //</span>
+                            <span class="matrix-cell-title">DIRECT INQUIRY</span>
+                        </div>
+                        <p class="matrix-cell-body">Have a dataset to model or a business intelligence challenge? Reach out directly.</p>
+                        <div class="matrix-cell-actions">
+                            <a href="mailto:almouthana.taha.khalfallah@gmail.com" class="blueprint-link">almouthana.taha.khalfallah@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Quadrant 02: Curriculum Vitae -->
+                    <div class="matrix-cell">
+                        <span class="corner-handle ch-tl"></span>
+                        <span class="corner-handle ch-tr"></span>
+                        <span class="corner-handle ch-bl"></span>
+                        <span class="corner-handle ch-br"></span>
+                        <div class="matrix-cell-header">
+                            <span class="matrix-cell-num">02 //</span>
+                            <span class="matrix-cell-title">CURRICULUM VITAE</span>
+                        </div>
+                        <p class="matrix-cell-body">Detailed overview of experience, analytics stacks, and academic background.</p>
+                        <div class="matrix-cell-actions">
+                            <a href="Files/My_CV___eng.pdf" download class="blueprint-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                <span>Download CV (EN)</span>
+                            </a>
+                            <a href="Files/My_CV___fr.pdf" download class="blueprint-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                <span>Download CV (FR)</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quadrant 03: Social Networks -->
+                    <div class="matrix-cell">
+                        <span class="corner-handle ch-tl"></span>
+                        <span class="corner-handle ch-tr"></span>
+                        <span class="corner-handle ch-bl"></span>
+                        <span class="corner-handle ch-br"></span>
+                        <div class="matrix-cell-header">
+                            <span class="matrix-cell-num">03 //</span>
+                            <span class="matrix-cell-title">NETWORKS</span>
+                        </div>
+                        <p class="matrix-cell-body">Open-source code, career highlights, and technical articles across platforms.</p>
+                        <div class="matrix-cell-actions blueprint-socials">
+                            <a href="https://github.com/Taha2053" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/almouthana-taha-khalfallah-841237261/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://x.com/khalfallah_taha" target="_blank" rel="noopener noreferrer" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quadrant 04: Dispatches & Writing -->
+                    <div class="matrix-cell">
+                        <span class="corner-handle ch-tl"></span>
+                        <span class="corner-handle ch-tr"></span>
+                        <span class="corner-handle ch-bl"></span>
+                        <span class="corner-handle ch-br"></span>
+                        <div class="matrix-cell-header">
+                            <span class="matrix-cell-num">04 //</span>
+                            <span class="matrix-cell-title">DISPATCHES & WRITING</span>
+                        </div>
+                        <p class="matrix-cell-body">Notes and breakdowns on Prompt Engineering, Agentic AI, and data tooling.</p>
+                        <div class="matrix-cell-actions">
+                            <a href="/ATK-LOG.github.io/blog/posts" target="_blank" rel="noopener noreferrer" class="blueprint-btn">Explore Archive →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="blueprint-subfooter">
+                <p>© 2026 Almouthana Taha Khalfallah. All rights reserved.</p>
+                <p>PORTFOLIO // DATA &amp; ARTIFICIAL INTELLIGENCE</p>
+            </div>
         </div>
-        
-        <div class="copyright">
-            <p>
-                Copyright © Almouthana Taha Khalfallah. 2025 All rights reserved
-            </p>
-        </div>
-        <button id="scrollTopBtn" title="Go to top">↑</button>
 
     </div>
-    
-<script>
-    var tablinks = document.getElementsByClassName("tablinks")
-    var tabcontents = document.getElementsByClassName("tabcontents")
+    </main>
+    </div>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("activelink");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("activetab");
-        }
-        event.currentTarget.classList.add("activelink");
-        document.getElementById(tabname).classList.add("activetab");
-    }
-</script>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
 
 <!-------Js for the side menu of the phone---->
 <script>
@@ -314,24 +403,6 @@
     }
 </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTZvOT6A32VRj6eZ5ozr22och8IryIvtJ-O-MjWZKILD4YkKCyS0-MuMiyR6fAizbI/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
 
 
 <script>

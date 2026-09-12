@@ -1,69 +1,76 @@
 
 #about{
-    padding: 80px 0;
-    color: #c9c9c9;
+    padding: 30px 0 60px 0;
+    color: #0B479D;
+    background-color: #fef7ea;
 }
-.row{
+
+.about-layout {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-.aboutcol1{
-    flex-basis: 35%;
-}
-.aboutcol1 img{
+    gap: 40px;
     width: 100%;
-    border-radius: 20px;
 }
-.aboutcol2 {
-    flex-basis:60% ;
+
+.about-img-wrap {
+    flex: 1;
+    min-width: 0;
+    max-width: 45%;
+    position: sticky;
+    top: 110px;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 15px 35px rgba(11, 71, 157, 0.08));
+    border-radius: 6px;
+}
+
+.about-content {
+    flex: 1.2;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .subtitle{
     font-size: 60px;
     font-weight: 600;
-    color:#fff;
+    color: #0B479D;
 }
-.tabtitles{
-    display: flex;
-    margin: 20px 0 40px;
+.about-section{
+    margin-top: 35px;
 }
-.tablinks{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+.about-title{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0B479D;
+    margin-bottom: 15px;
     position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0B479D;
 }
-
-.tablinks::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #e38e05;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.15s;
+.about-list{
+    list-style: disc;
+    padding-left: 20px;
 }
-
-.tablinks.activelink::after{
-    width: 50%;
+.about-list li{
+    margin: 12px 0;
+    line-height: 1.6;
+    color: #0B479D;
+    font-size: 15px;
 }
-.tabcontents ul li{
-    list-style: none;
-    margin: 10px 0;
-
+.about-list li span{
+    color: #0B479D;
+    font-weight: 700;
+    font-size: 15px;
 }
-.tabcontents ul li span{
-    color: #e38e05;
-    font-size: 14px;
-}
-
-.tabcontents{
-    display: none;
-}
-
-.tabcontents.activetab{
-    display: block;
+.about-list li em{
+    color: #0B479D;
+    font-style: italic;
 }

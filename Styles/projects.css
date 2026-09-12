@@ -1,84 +1,37 @@
 #projects{
     padding: 50px 0px;
-    display: grid;
-}
-.worklist{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work{
-    height: 560px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition:transform 0.5s;
-    object-fit: cover;
-    object-position: center;
+    background-color: #fef7ea;
+    color: #0B479D;
 }
 
-.layer{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1),#e38e05);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+.projects-layout {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
 }
 
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-
+.projects-img-wrap {
+    flex: 1;
+    min-width: 0;
+    max-width: 45%;
+    position: sticky;
+    top: 110px;
 }
 
-.layer a{
-    margin-top: 20px;
-    color: #e38e05;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.work:hover img {
-    transform: scale(1.1);
-}
-
-.work:hover .layer{
-    height: 110%;
-}
-
-.btn{
+.projects-img {
+    width: 100%;
+    height: auto;
     display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #e38e05;
-    padding: 14px 50px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
+    filter: drop-shadow(0 15px 35px rgba(11, 71, 157, 0.08));
+    border-radius: 6px;
 }
-.btn:hover{
-    background: #e38e05;
+
+.projects-content {
+    flex: 1.2;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
 }

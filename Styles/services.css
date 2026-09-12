@@ -1,6 +1,7 @@
 #services{
     padding: 30px 0;
-
+    background-color: #fef7ea;
+    color: #0B479D;
 }
 .serviceslist{
     display: grid;
@@ -9,34 +10,54 @@
     margin-top: 50px;
 }
 .serviceslist div{
-    background: #262626;
+    background: #fef7ea;
+    border: 1px solid #0B479D;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 14px;
+    color: #0B479D;
+    transition: background 0.4s, color 0.4s, transform 0.4s;
 }
 
 .serviceslist div i{
     font-size: 50px;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
+    color: #0B479D;
+    transition: color 0.4s;
 }
 
 .serviceslist div h2 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 600;
     margin: 15px 0px;
+    color: #0B479D;
+    transition: color 0.4s;
+}
+
+.serviceslist div p{
+    color: #0B479D;
+    line-height: 1.5;
+    transition: color 0.4s;
 }
 
 .serviceslist div a{
     text-decoration: underline;
-    color: white;
+    color: #0B479D;
     font-size: 15px;
     margin: 20px 0px;
     display: inline-block;
+    transition: color 0.4s;
 }
 
 .serviceslist div:hover{
-    background: #e38e05;
-    transform: translatey(-10px);
+    background: #0B479D;
+    color: #fef7ea;
+    transform: translateY(-8px);
+}
+.serviceslist div:hover i,
+.serviceslist div:hover h2,
+.serviceslist div:hover p,
+.serviceslist div:hover a{
+    color: #fef7ea;
 }

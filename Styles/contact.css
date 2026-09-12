@@ -1,79 +1,381 @@
-.contactleft{
-    flex-basis: 35%;
+/* ==========================================================================
+   Architectural Blueprint & Classical Editorial Footer
+   Inspired by copperplate engraving & blueprint grid matrix
+   ========================================================================== */
+
+#contact {
+    background-color: #fef7ea;
+    color: #0B479D;
+    padding: 60px 0 0 0;
+    position: relative;
+    border-top: 2px solid #0B479D;
+    font-family: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', serif;
 }
-.contactright{
-    flex-basis: 60%;
+/* Blueprint container */
+.blueprint-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-.contactleft p{
-    margin-top: 30px;
-
+/* Top header bar — simplified (ruler ticks removed for cleaner footer) */
+.blueprint-header-bar {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #0B479D;
 }
 
-.contactleft p i{
-    color: #e38e05;
-    margin-right: 15px;
-    font-size: 25px;
+.blueprint-tag {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0B479D;
 }
 
-.socialicons{
-    margin-top: 30px;
+/* Main content body: Left engraving + Right 2x2 grid — optimized for landscape engineering illustration */
+.blueprint-body {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    min-height: 400px;
+    position: relative;
 }
 
-.socialicons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
+/* Left pane: illustration + text — simplified, no extra wrapper */
+.blueprint-left {
+    padding: 30px 40px 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    border-right: 1px solid #0B479D;
 }
 
-.socialicons a:hover{
-    color: #e38e05;
-    transform: translateY(-5px);
+.blueprint-headline {
+    font-size: 32px;
+    font-weight: 400;
+    color: #0B479D;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
 }
 
-.btn.btn2{
-    display: inline-block;
-    padding: 10px 20px 10px 20px;
-    background: #e38e05;
-    font-size: 20px;
+.blueprint-subtext {
+    font-size: 15px;
+    color: #2D588F;
+    line-height: 1.5;
+    max-width: 320px;
 }
-.contactright form{
+
+.blueprint-illustration-wrap {
+    margin-top: auto;
+    padding-top: 24px;
     width: 100%;
+    display: flex;
+    align-items: flex-end;
 }
-form input, form textarea{
+.blueprint-illustration {
     width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font: 18px;
-    border-radius: 6px;
-    resize: none;
-}
-
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #030912;
-    font-weight:300 ;
-    margin-top: 20px;
-}
-
-#msg{
-    color: #61b752;
-    margin-top: -40px;
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: bottom left;
     display: block;
+    filter: drop-shadow(0 15px 35px rgba(11, 71, 157, 0.08));
+    border-radius: 6px;
+}
+
+/* Right pane: 2x2 capability / contact matrix */
+.blueprint-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+/* Matrix card */
+.matrix-cell {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #0B479D;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.matrix-cell:nth-child(odd) {
+    border-right: 1px solid #0B479D;
+}
+
+/* Technical corner handle squares */
+.matrix-cell .corner-handle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #0B479D;
+    pointer-events: none;
+}
+
+.matrix-cell .ch-tl { top: -3px; left: -3px; }
+.matrix-cell .ch-tr { top: -3px; right: -3px; }
+.matrix-cell .ch-bl { bottom: -3px; left: -3px; }
+.matrix-cell .ch-br { bottom: -3px; right: -3px; }
+
+/* Active / highlighted card (Quadrant 01) */
+.matrix-cell.active-cell {
+    background-color: #0B479D;
+    color: #FFFFFF;
+}
+
+.matrix-cell.active-cell .corner-handle {
+    background: #FFFFFF;
+    outline: 1px solid #0B479D;
+}
+
+.matrix-cell.active-cell .matrix-cell-num {
+    color: #FFFFFF;
+}
+
+.matrix-cell.active-cell .matrix-cell-title {
+    color: #FFFFFF;
+}
+
+.matrix-cell.active-cell .matrix-cell-body {
+    color: #E2ECF9;
+}
+
+.matrix-cell.active-cell .blueprint-link {
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.matrix-cell.active-cell .blueprint-link:hover {
+    border-bottom-color: #FFFFFF;
+}
+
+/* Inactive cell typography */
+.matrix-cell-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.matrix-cell-num {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #0B479D;
+}
+
+.matrix-cell-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #0B479D;
+}
+
+.matrix-cell-body {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #2D588F;
+    margin-bottom: 16px;
+    font-style: normal;
+}
+
+.matrix-cell-actions {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Blueprint links and action buttons */
+.blueprint-link {
+    color: #0B479D;
+    font-size: 14px;
+    text-decoration: none;
+    word-break: break-all;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(11, 71, 157, 0.4);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.blueprint-link:hover {
+    border-bottom-color: #0B479D;
+}
+
+.blueprint-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #0B479D;
+    background: transparent;
+    border: 1px solid #0B479D;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.blueprint-btn svg {
+    stroke: currentColor;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.blueprint-btn:hover {
+    background: #0B479D;
+    color: #FFFFFF;
+}
+
+.blueprint-btn:hover svg {
+    transform: translateY(2px);
+}
+
+/* Solid variant — primary blueprint action (used for View Project / Read Article) */
+.blueprint-btn-blue {
+    background: #0B479D;
+    color: #fef7ea;
+    border-color: #0B479D;
+}
+
+.blueprint-btn-blue:hover {
+    background: #083472;
+    color: #fef7ea;
+    border-color: #083472;
+}
+
+/* See More CTA — larger blueprint button, centered below section */
+.see-more-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.blueprint-btn--see-more {
+    padding: 10px 28px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    border-radius: 0;
+}
+
+.projects-img-wrap .see-more-wrap,
+.posts-img-wrap .see-more-wrap {
+    margin-top: 20px;
+}
+/* Social icons line */
+.blueprint-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.blueprint-socials a {
+    color: #0B479D;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.blueprint-socials a:hover {
+    transform: translateY(-2px);
+    opacity: 0.75;
+}
+
+/* Hover effects for regular matrix cells */
+.matrix-cell:not(.active-cell):hover {
+    background-color: rgba(11, 71, 157, 0.04);
+}
+
+/* Bottom copyright & sub-footer — simplified (inner wrapper removed) */
+.blueprint-subfooter {
+    border-top: 1px solid #0B479D;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: #2D588F;
+}
+
+.blueprint-subfooter p {
+    margin: 0;
+}
+
+/* Scroll to top button in blueprint style */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    background: #0B479D;
+    color: #FFFFFF;
+    border: 1px solid #0B479D;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(11, 71, 157, 0.2);
+    transition: background 0.2s, transform 0.2s;
+    z-index: 99;
+}
+
+#scrollTopBtn.show {
+    display: flex;
+}
+
+#scrollTopBtn:hover {
+    background: #083472;
+    transform: translateY(-2px);
+}
+
+/* Responsive queries */
+@media (max-width: 960px) {
+    .blueprint-body {
+        grid-template-columns: 1fr;
+    }
+
+    .blueprint-left {
+        border-right: none;
+        border-bottom: 1px solid #0B479D;
+        padding-right: 0;
+    }
+
+    .blueprint-illustration-wrap {
+        justify-content: center;
+    }
+
+    .blueprint-illustration {
+        max-height: 220px;
+    }
+}
+
+@media (max-width: 640px) {
+    .blueprint-wrapper {
+        padding: 0 20px;
+    }
+
+    .blueprint-matrix {
+        grid-template-columns: 1fr;
+    }
+
+    .matrix-cell:nth-child(odd) {
+        border-right: none;
+    }
+
+    .blueprint-subfooter {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
 }

@@ -1,6 +1,39 @@
 #posts{
-    padding: 30px 0;
+    padding: 50px 0;
+    background-color: #fef7ea;
+    color: #0B479D;
+}
 
+.posts-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.posts-img-wrap {
+    flex: 1;
+    min-width: 0;
+    max-width: 45%;
+    position: sticky;
+    top: 110px;
+}
+
+.posts-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 15px 35px rgba(11, 71, 157, 0.08));
+    border-radius: 6px;
+}
+
+.posts-content {
+    flex: 1.2;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
 }
 .postslist{
     display: grid;
@@ -9,34 +42,54 @@
     margin-top: 50px;
 }
 .postslist div{
-    background: #262626;
+    background: #fef7ea;
+    border: 1px solid #0B479D;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 14px;
+    color: #0B479D;
+    transition: background 0.4s, color 0.4s, transform 0.4s;
 }
 
 .postslist div i{
     font-size: 50px;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
+    color: #0B479D;
+    transition: color 0.4s;
 }
 
 .postslist div h2 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 600;
     margin: 15px 0px;
+    color: #0B479D;
+    transition: color 0.4s;
+}
+
+.postslist div p{
+    color: #0B479D;
+    line-height: 1.5;
+    transition: color 0.4s;
 }
 
 .postslist div a{
     text-decoration: underline;
-    color: white;
+    color: #0B479D;
     font-size: 15px;
     margin: 20px 0px;
     display: inline-block;
+    transition: color 0.4s;
 }
 
 .postslist div:hover{
-    background: #e38e05;
-    transform: translatey(-10px);
+    background: #0B479D;
+    color: #fef7ea;
+    transform: translateY(-8px);
+}
+.postslist div:hover i,
+.postslist div:hover h2,
+.postslist div:hover p,
+.postslist div:hover a{
+    color: #fef7ea;
 }
