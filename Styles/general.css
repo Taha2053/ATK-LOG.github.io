@@ -30,7 +30,8 @@ body{
     position: sticky;
     top: 85px;
     left: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: #fef7ea;
     border-right: 1.5px solid rgba(11, 71, 157, 0.2);
     z-index: 40;
@@ -135,6 +136,180 @@ body{
 
 .sidebar-cvs .btn2:hover svg {
     transform: translateY(2px);
+}
+
+/* GCD4F distinction */
+.sidebar-achievement {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 15px 13px;
+    overflow: hidden;
+    color: #0B479D;
+    background-color: #fffaf0;
+    border: 1px solid rgba(11, 71, 157, 0.55);
+    box-shadow: 0 7px 18px rgba(11, 71, 157, 0.1);
+    text-align: center;
+}
+
+.sidebar-achievement::before,
+.sidebar-achievement::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    right: 26px;
+    height: 1px;
+    background-color: rgba(11, 71, 157, 0.22);
+}
+
+.sidebar-achievement::before {
+    top: 5px;
+}
+
+.sidebar-achievement::after {
+    bottom: 5px;
+}
+
+.achievement-corner {
+    position: absolute;
+    top: 9px;
+    width: 13px;
+    height: 13px;
+    border-top: 1px solid #0B479D;
+}
+
+.achievement-corner-tl {
+    left: 9px;
+    border-left: 1px solid #0B479D;
+}
+
+.achievement-corner-tr {
+    right: 9px;
+    border-right: 1px solid #0B479D;
+}
+
+.achievement-medal {
+    width: 35px;
+    height: 41px;
+    margin: -2px auto 1px;
+}
+
+.achievement-medal svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.medal-ribbon {
+    fill: #0B479D;
+}
+
+.medal-disc {
+    fill: #9A623D;
+}
+
+.medal-ring,
+.medal-laurel {
+    fill: none;
+    stroke: #fef7ea;
+    stroke-width: 1.25;
+    stroke-linecap: round;
+}
+
+.achievement-medal text {
+    fill: #fef7ea;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.achievement-award {
+    font-family: 'Cormorant SC', 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+}
+
+.achievement-place {
+    margin-top: 2px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.achievement-event {
+    max-width: 270px;
+    margin: 5px auto 0;
+    color: #2D588F;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.achievement-location {
+    margin-top: 3px;
+    color: #2D588F;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.achievement-location span {
+    padding: 0 3px;
+    color: rgba(11, 71, 157, 0.55);
+}
+
+.achievement-rule {
+    width: 45px;
+    height: 1px;
+    margin: 8px auto 6px;
+    background-color: rgba(11, 71, 157, 0.5);
+}
+
+.achievement-project {
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.achievement-copy {
+    max-width: 280px;
+    margin: 4px auto 0;
+    color: #2D588F;
+    font-size: 11.5px;
+    line-height: 1.25;
+}
+
+.achievement-actions {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 9px;
+}
+
+.achievement-link {
+    color: #0B479D;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(11, 71, 157, 0.5);
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.achievement-link:hover,
+.achievement-link:focus-visible {
+    color: #2D588F;
+    border-color: #2D588F;
+}
+
+.achievement-link:focus-visible {
+    outline: 2px solid #0B479D;
+    outline-offset: 3px;
+}
+
+.achievement-link-placeholder {
+    cursor: not-allowed;
+    opacity: 0.62;
 }
 
 .sidebar-socials {

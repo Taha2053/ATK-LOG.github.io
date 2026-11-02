@@ -1,5 +1,7 @@
 # Personal Portfolio
 Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as an Engineering Student - AI enthusiast.
+
+The sidebar highlights the Global Bronze Award (3rd Place Worldwide) earned by MindEase at GCD4F 2026.
 ## Used
 - HTML
 - CSS
